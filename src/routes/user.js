@@ -4,7 +4,7 @@ const { getAllUsers, addNewUser, editUser, deleteUser } = require('../controller
 
 router.get('/all', getAllUsers); //works
 router.post('/add', addNewUser); //works
-router.put('/edit', editUser); // not working
+router.put('/edit', editUser); // works
 router.delete('/delete', deleteUser); //works
 
 module.exports = router;

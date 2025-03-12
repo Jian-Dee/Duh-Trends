@@ -179,39 +179,47 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `AddNewUser` (IN `name_param` VARCHA
     END IF;
 END$$ --done
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `AddPaymentHistoryRecord` (IN `payment_date_param` DATE, IN `amount_param` FLOAT, IN `remarks_param` VARCHAR(255), IN `renter_id_param` INT)   BEGIN
-    DECLARE rent_id INT;
-    DECLARE remarks_id INT;
-
-    SELECT rent_id INTO rent_id
-    FROM tbl_rent
-    WHERE renter_id = renter_id_param;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `AddPaymentHistoryRecord`(IN `p_payment_date` DATE, IN `p_amount` FLOAT, IN `p_remarks` VARCHAR(255), IN `p_renter_id` INT)
+BEGIN
+    DECLARE v_rent_id INT;
+    DECLARE v_remarks_id INT;
+    DECLARE v_last_payment_id INT;
     
-    INSERT INTO tbl_payment (rent_id)
-    VALUES (rent_id);
+    SELECT MAX(rent_id) INTO v_rent_id 
+      FROM tbl_rent 
+      WHERE renter_id = p_renter_id;
     
-    SET @last_payment_id = LAST_INSERT_ID();
-
-    SELECT remarks_id INTO remarks_id
-    FROM tbl_remarks
-    WHERE remarks = remarks_param;
-
-    IF remarks_id IS NULL THEN
-        INSERT INTO tbl_remarks (remarks)
-        VALUES (remarks_param);
-        SET remarks_id = LAST_INSERT_ID();
+    IF v_rent_id IS NULL THEN
+        SIGNAL SQLSTATE '45000' 
+          SET MESSAGE_TEXT = 'No rent record found for given renter';
     END IF;
-
+    
+    INSERT INTO tbl_payment (Rent_ID)
+      VALUES (v_rent_id);
+    
+    SET v_last_payment_id = LAST_INSERT_ID();
+    
+    SELECT Remarks_ID INTO v_remarks_id
+      FROM tbl_remarks
+      WHERE Remarks = p_remarks
+      LIMIT 1;
+    
+    IF v_remarks_id IS NULL THEN
+        INSERT INTO tbl_remarks (Remarks)
+          VALUES (p_remarks);
+        SET v_remarks_id = LAST_INSERT_ID();
+    END IF;
+    
     INSERT INTO tbl_payment_history (
-        payment_id, 
-        payment_date, 
-        amount, 
-        remarks_id
+        Payment_ID, 
+        Payment_Date, 
+        Amount, 
+        Remarks_ID
     ) VALUES (
-        @last_payment_id, 
-        payment_date_param, 
-        amount_param, 
-        remarks_id
+        v_last_payment_id, 
+        p_payment_date, 
+        p_amount, 
+        v_remarks_id
     );
 END$$ --done
 
@@ -324,17 +332,19 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `DeleteUser` (IN `user_id_param` INT
     WHERE user_id = user_id_param;
 END$$ --done
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `EditArea` (IN `area_id_param` INT, IN `area_name_param` VARCHAR(255), IN `type_name_param` VARCHAR(255), IN `size_param` VARCHAR(255), IN `price_param` FLOAT(10,2), IN `description_param` TEXT)   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `EditArea` (IN `area_id_param` INT, IN `area_name_param` VARCHAR(255), IN `type_name_param` VARCHAR(255), IN `size_param` VARCHAR(255), IN `price_param` FLOAT(10,2), IN `description_param` TEXT)
+BEGIN
     DECLARE v_area_type_id INT;
-
+    
     UPDATE tbl_area
     SET area_name = area_name_param
     WHERE area_id = area_id_param;
-
-    SELECT area_type_id INTO v_area_type_id
-    FROM tbl_area_type
-    WHERE type_name = type_name_param;
-
+    
+    SELECT area_type_id 
+      INTO v_area_type_id
+      FROM tbl_area
+      WHERE area_id = area_id_param;
+    
     UPDATE tbl_area_type
     SET type_name = type_name_param,
         size = size_param,
@@ -393,21 +403,25 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `EditRentRecord` (IN `rent_id_param`
     WHERE rent_id = rent_id_param;
 END$$ --done
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `EditUser` (IN `user_id_param` INT, IN `name_param` VARCHAR(75), IN `username_param` VARCHAR(50), IN `password_param` VARCHAR(25), IN `role_name_param` VARCHAR(50), IN `gender_title_param` VARCHAR(6), IN `contact_number_param` VARCHAR(20))   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `EditUser`(IN `user_id_param` INT, IN `name_param` VARCHAR(75), IN `username_param` VARCHAR(50), IN `password_param` VARCHAR(25), IN `role_name_param` VARCHAR(50), IN `gender_title_param` VARCHAR(6), IN `contact_number_param` VARCHAR(20))
+BEGIN
     DECLARE user_role_id_param INT;
     DECLARE gender_id_param INT;
     DECLARE v_renter_id INT;
+    DECLARE v_contact_id INT;
 
-    SELECT user_role_id INTO user_role_id_param
-    FROM tbl_user_role
-    WHERE role_name = role_name_param
-    LIMIT 1;
+    SELECT user_role_id
+      INTO user_role_id_param
+      FROM tbl_user_role
+      WHERE role_name = role_name_param
+      LIMIT 1;
 
-    SELECT gender_id INTO gender_id_param
-    FROM tbl_gender
-    WHERE gender_title = gender_title_param
-    LIMIT 1;
-
+    SELECT gender_id
+      INTO gender_id_param
+      FROM tbl_gender
+      WHERE gender_title = gender_title_param
+      LIMIT 1;
+      
     UPDATE tbl_user
     SET username = username_param,
         password = password_param,
@@ -415,16 +429,23 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `EditUser` (IN `user_id_param` INT, 
         user_gender = gender_id_param
     WHERE user_id = user_id_param;
 
-    UPDATE tbl_user_contact
-    SET contact_number = contact_number_param
-    WHERE user_id = user_id_param;
-    
-    IF role_name_param = 'renter' THEN
-        SELECT renter_id INTO v_renter_id
-        FROM tbl_renter
-        WHERE renter_name = (SELECT name FROM tbl_user WHERE user_id = user_id_param)
-        LIMIT 1;
+    SELECT contact_id
+      INTO v_contact_id
+      FROM tbl_user
+      WHERE user_id = user_id_param
+      LIMIT 1;
 
+    UPDATE tbl_contact
+    SET contact = contact_number_param
+    WHERE contact_id = v_contact_id;
+
+    IF role_name_param = 'renter' THEN
+        SELECT renter_id
+          INTO v_renter_id
+          FROM tbl_renter
+          WHERE renter_name = (SELECT name FROM tbl_user WHERE user_id = user_id_param)
+          LIMIT 1;
+          
         IF v_renter_id IS NOT NULL THEN
             UPDATE tbl_renter
             SET renter_name = name_param
@@ -432,6 +453,7 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `EditUser` (IN `user_id_param` INT, 
         END IF;
     END IF;
 END$$ --done
+
 
 CREATE DEFINER=`root`@`localhost` PROCEDURE `GetAllRentRecords` ()   BEGIN 
     SELECT 
