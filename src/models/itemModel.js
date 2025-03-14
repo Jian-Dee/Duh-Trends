@@ -31,15 +31,17 @@ const editItem = async (renterId, itemId, newItemId, newItemName) => {
     }
   };
   
-  const addItemToStock = async (renterId, itemId, quantity, itemPrice, itemDescription) => {
+  const addItemToStock = async (itemId, newQuantity) => {
     try {
-      const query = `CALL AddItemToStock(?, ?, ?, ?, ?)`;
-      const [result] = await db.execute(query, [renterId, itemId, quantity, itemPrice, itemDescription]);
-      return result;
+        const query = `UPDATE tbl_item_stock SET quantity = quantity + ? WHERE Item_ID = ?`;
+        const [result] = await db.execute(query, [newQuantity, itemId]);
+        return result;
     } catch (error) {
-      throw error;
+        throw error;
     }
-  };
+};
+
+
   
   const editItemQuantity = async (renterId, itemId, newQuantity, newPrice, newDescription) => {
     try {
@@ -100,6 +102,18 @@ const editItem = async (renterId, itemId, newItemId, newItemName) => {
       throw error;
     }
   };  
+
+  const getAllItems = async (renterId) => {
+    try {
+        const query = `SELECT * FROM tbl_items WHERE renter_id = ?`;
+        const [result] = await db.execute(query, [renterId]);
+        return result;
+    } catch (error) {
+        throw error;
+    }
+};
+
+  
   
   module.exports = { 
     addItem, 
@@ -111,8 +125,10 @@ const editItem = async (renterId, itemId, newItemId, newItemName) => {
     returnRenterStock, 
     getTotalItemsInStockByRenter,
     getTotalLowStockByRenter,  
-    getTotalOutOfStockItems
-  };
+    getTotalOutOfStockItems,
+    getAllItems 
+};
+
   
   
   

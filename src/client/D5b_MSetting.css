@@ -1,0 +1,254 @@
+body {
+    background-image: url('rd.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Poppins;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover, a:visited, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+.management-settings-page-child {
+    position: absolute;
+    top: 524px;
+    left: 23px;
+    border-radius: 26px;
+    background-color: #f6f6f6;
+    width: 294px;
+    height: 52px;
+}
+.management-settings-page-item {
+    position: absolute;
+    top: 24px;
+    left: 261px;
+    border-radius: 45px;
+    background-color: #f6f6f6;
+    width: 995px;
+    height: 752px;
+}
+.rent-payment {
+    margin: 0;
+}
+.rent-payment-tracking-container {
+    position: absolute;
+    top: 373px;
+    left: 83px;
+    display: inline-block;
+    width: 189px;
+    height: 25px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.settings {
+    position: absolute;
+    top: 537px;
+    left: 88px;
+    display: inline-block;
+    width: 189px;
+    height: 25px;
+    text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+}
+.manage-user {
+    position: absolute;
+    top: 466px;
+    left: 84px;
+    display: inline-block;
+    width: 189px;
+    height: 25px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.home {
+    position: absolute;
+    top: 190px;
+    left: 83px;
+    display: inline-block;
+    width: 74px;
+    height: 27px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.icon {
+    position: absolute;
+    top: 189px;
+    left: 39px;
+    width: 29px;
+    height: 29px;
+    object-fit: cover;
+}
+.icon1 {
+    position: absolute;
+    top: 384px;
+    left: 39px;
+    width: 31px;
+    height: 31px;
+    object-fit: cover;
+}
+.icon2 {
+    position: absolute;
+    top: 537px;
+    left: 41px;
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}
+.inventory-overview {
+    position: absolute;
+    top: 275px;
+    left: 83px;
+    display: inline-block;
+    width: 140px;
+    height: 50px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.icon3 {
+    position: absolute;
+    top: 286px;
+    left: 39px;
+    width: 31px;
+    height: 31px;
+    object-fit: cover;
+}
+.icon4 {
+    position: absolute;
+    top: 466px;
+    left: 40px;
+    width: 29px;
+    height: 29px;
+    object-fit: cover;
+}
+.settings1 {
+    position: absolute;
+    top: 72px;
+    left: 673px;
+    font-size: 40px;
+    font-weight: 500;
+    color: #303030;
+    text-align: center;
+    display: inline-block;
+    width: 171px;
+    height: 49px;
+    text-shadow: 1px 0 0 #303030, 0 1px 0 #303030, -1px 0 0 #303030, 0 -1px 0 #303030;
+}
+.group-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 25px;
+    background-color: #303030;
+    width: 221px;
+    height: 57px;
+}
+.log-out {
+    position: absolute;
+    top: 5px;
+    left: 67px;
+    display: inline-block;
+    width: 137px;
+    height: 39px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.4);
+}
+.icon5 {
+    position: absolute;
+    top: 11px;
+    left: 22px;
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+}
+.rectangle-parent {
+    position: absolute;
+    top: 698px;
+    left: 1014px;
+    width: 221px;
+    height: 57px;
+    text-align: center;
+    font-size: 30px;
+    color: #f6f6f6;
+}
+.group-item {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 22px;
+    background-color: #303030;
+    width: 890px;
+    height: 253px;
+}
+.role-management {
+    position: absolute;
+    top: 87px;
+    left: 251px;
+    display: inline-block;
+    width: 245px;
+    height: 28px;
+}
+.username-jnlechoncito {
+    position: absolute;
+    top: 115px;
+    left: 251px;
+    display: inline-block;
+    width: 302px;
+    height: 27px;
+    font-family: Inter;
+}
+.user-id-00003-container {
+    position: absolute;
+    top: 142px;
+    left: 251px;
+    font-size: 20px;
+    display: inline-block;
+    width: 302px;
+    height: 49px;
+}
+.name-josef-neil {
+    position: absolute;
+    top: 38px;
+    left: 251px;
+    font-size: 36px;
+    display: inline-block;
+    width: 630px;
+    height: 49px;
+}
+.icon6 {
+    position: absolute;
+    top: 27px;
+    left: 26px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.rectangle-group {
+    position: absolute;
+    top: 167px;
+    left: 314px;
+    width: 890px;
+    height: 253px;
+    font-size: 22px;
+    color: #f6f6f6;
+}
+.duh-trends-palas {
+    position: absolute;
+    top: 70px;
+    left: 51px;
+    font-size: 24px;
+    display: inline-block;
+    text-align: center;
+    width: 160px;
+    height: 66px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.management-settings-page {
+    width: 100%;
+    position: relative;
+    height: 800px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 18px;
+    color: #fff;
+    font-family: Poppins;
+}
+

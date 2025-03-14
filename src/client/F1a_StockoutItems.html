@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet"  href="F1b_StockoutItems.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+  	
+  	
+  	
+</head>
+<body>
+  	
+  	<div class="staff-stockout-items">
+    		<div class="update-stock-pop-up-wrapper">
+      			<div class="update-stock-pop-up-wrapper">
+        				<div class="update-stock-pop-up-wrapper">
+          					<div class="group-child">
+          					</div>
+          					<div class="group-item">
+          					</div>
+        				</div>
+      			</div>
+    		</div>
+    		
+    		
+    		<b class="stockout-items">Stockout Items</b>
+    		<div class="back-to-inventory-overview-parent">
+				<a href="C3a_InventoryOverview.html">
+      			<b class="back-to-inventory">Back to Inventory Overview</b>
+      			<img class="back-icon-1" alt="" src="back-icon.png"></a>
+      			
+    		</div>
+    		<div class="group-parent">
+				<div class="rectangle-group">
+					  <div class="group-inner"></div>
+					  <b class="add-stockout-item">ADD STOCKOUT ITEM</b>
+
+				
+					  <input type="text" id="itemId" class="rectangle-div" placeholder="Enter Item ID">
+					  <input type="number" id="quantity" class="group-child1" placeholder="Enter Quantity">
+					  <textarea id="reason" class="group-child2" placeholder="Enter Reason"></textarea>
+
+					  <div class="item-id">Item_ID</div>
+					  <div class="quantity">Quantity</div>
+					  <div class="reason">Reason</div>
+				</div>
+
+      			<div class="rectangle-container" onclick="submitStockoutItem()">
+        				<div class="group-child3"></div>
+        				<b class="submit">Submit</b>
+      			</div>
+    		</div>
+    		<div class="table">
+      			<div class="row">
+        				<div class="cell">
+          					<div class="content">
+            						<div class="text">Stockout_ID</div>
+          					</div>
+        				</div>
+        				<div class="cell">
+          					<div class="content">
+            						<div class="text">Item_ID</div>
+          					</div>
+        				</div>
+        				<div class="cell">
+          					<div class="content">
+            						<div class="text">Item_Name</div>
+          					</div>
+        				</div>
+        				<div class="cell">
+          					<div class="content">
+            						<div class="text">Quantity</div>
+          					</div>
+        				</div>
+        				<div class="cell">
+          					<div class="content">
+            						<div class="text">Reason</div>
+          					</div>
+        				</div>
+      			</div>
+      			<div class="row1">
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+      			</div>
+      			<div class="row1">
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+      			</div>
+      			<div class="row1">
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+      			</div>
+      			<div class="row1">
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+      			</div>
+      			<div class="row1">
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+      			</div>
+    		</div>
+  	</div>
+  	
+	  <script>
+		let stockoutCounter = 1; // Counter for unique Stockout_ID
+
+		function submitStockoutItem() {
+			  const itemId = document.getElementById('itemId').value.trim();
+			  const quantity = document.getElementById('quantity').value.trim();
+			  const reason = document.getElementById('reason').value.trim();
+
+			  // Validation
+			  if (!itemId || !quantity || !reason) {
+					alert('Please fill in all fields!');
+					return;
+			  }
+
+			  // Append new row to the table
+			  const table = document.getElementById('stockoutTable');
+
+			  const row = document.createElement('div');
+			  row.classList.add('row1');
+			  row.innerHTML = `
+					<div class="cell5"><div class="content"><div class="text5">${stockoutCounter++}</div></div></div>
+					<div class="cell5"><div class="content"><div class="text5">${itemId}</div></div></div>
+					<div class="cell5"><div class="content"><div class="text5">Item_Name_Here</div></div></div>
+					<div class="cell5"><div class="content"><div class="text5">${quantity}</div></div></div>
+					<div class="cell5"><div class="content"><div class="text5">${reason}</div></div></div>
+			  `;
+			  table.appendChild(row);
+
+			  // Clear input fields after submission
+			  document.getElementById('itemId').value = '';
+			  document.getElementById('quantity').value = '';
+			  document.getElementById('reason').value = '';
+		}
+  </script>
+  	
+  	
+</body>
+</html>

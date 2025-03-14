@@ -8,7 +8,7 @@ const {
   resetSales 
 } = require('../controllers/saleController');
 
-router.post('/add', addNewSale);  //works somewhat
+router.post('/add', addNewSale);  //works 
 router.get('/return-items/:renterId', returnSoldItemsByRenter); //works
 router.get('/sales-history/:renterId', getRenterSalesHistoryWithSubtotal); //works 
 router.get('/total-sales/:renterId', getTotalSalesByRenter); //works

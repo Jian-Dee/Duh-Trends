@@ -1,0 +1,251 @@
+body {
+    background-image: url('rd.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Poppins;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover, a:visited, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+.staff-setting-page-child {
+    position: absolute;
+    top: 24px;
+    left: 261px;
+    border-radius: 45px;
+    background-color: #f6f6f6;
+    width: 995px;
+    height: 752px;
+}
+.settings {
+    position: absolute;
+    top: 72px;
+    left: 673px;
+    font-size: 40px;
+    font-weight: 500;
+    color: #303030;
+    text-align: center;
+    display: inline-block;
+    width: 171px;
+    height: 49px;
+    text-shadow: 1px 0 0 #303030, 0 1px 0 #303030, -1px 0 0 #303030, 0 -1px 0 #303030;
+}
+.staff-setting-page-item {
+    position: absolute;
+    top: 526px;
+    left: 24px;
+    border-radius: 26px;
+    background-color: #f6f6f6;
+    width: 290px;
+    height: 50px;
+}
+.settings1 {
+    position: absolute;
+    top: 537px;
+    left: 88px;
+    display: inline-block;
+    width: 189px;
+    height: 25px;
+    text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+}
+.icon {
+    position: absolute;
+    top: 537px;
+    left: 41px;
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}
+.group-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 25px;
+    background-color: #303030;
+    width: 221px;
+    height: 57px;
+}
+.log-out {
+    position: absolute;
+    top: 5px;
+    left: 67px;
+    display: inline-block;
+    width: 137px;
+    height: 39px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.4);
+}
+.icon1 {
+    position: absolute;
+    top: 11px;
+    left: 22px;
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+}
+.rectangle-parent {
+    position: absolute;
+    top: 698px;
+    left: 1014px;
+    width: 221px;
+    height: 57px;
+    text-align: center;
+    font-size: 30px;
+    color: #f6f6f6;
+}
+.group-item {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 22px;
+    background-color: #303030;
+    width: 890px;
+    height: 253px;
+}
+.role-staff {
+    position: absolute;
+    top: 87px;
+    left: 251px;
+    display: inline-block;
+    width: 245px;
+    height: 28px;
+}
+.username-dlobaton {
+    position: absolute;
+    top: 115px;
+    left: 251px;
+    display: inline-block;
+    width: 302px;
+    height: 27px;
+    font-family: Inter;
+}
+.user-id-00002-container {
+    position: absolute;
+    top: 142px;
+    left: 251px;
+    font-size: 20px;
+    display: inline-block;
+    width: 302px;
+    height: 49px;
+}
+.name-denise-lobaton {
+    position: absolute;
+    top: 38px;
+    left: 251px;
+    font-size: 36px;
+    display: inline-block;
+    width: 630px;
+    height: 49px;
+}
+.icon2 {
+    position: absolute;
+    top: 27px;
+    left: 26px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.rectangle-group {
+    position: absolute;
+    top: 167px;
+    left: 314px;
+    width: 890px;
+    height: 253px;
+    font-size: 22px;
+    color: #f6f6f6;
+}
+.rent-payment-log {
+    position: absolute;
+    top: 457px;
+    left: 82px;
+    display: inline-block;
+    width: 189px;
+    height: 25px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.home {
+    position: absolute;
+    top: 190px;
+    left: 83px;
+    display: inline-block;
+    width: 74px;
+    height: 27px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.icon3 {
+    position: absolute;
+    top: 189px;
+    left: 39px;
+    width: 29px;
+    height: 29px;
+    object-fit: cover;
+}
+.icon4 {
+    position: absolute;
+    top: 456px;
+    left: 38px;
+    width: 31px;
+    height: 31px;
+    object-fit: cover;
+}
+.manage-inventory {
+    position: absolute;
+    top: 358px;
+    left: 85px;
+    display: inline-block;
+    width: 140px;
+    height: 50px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.icon5 {
+    position: absolute;
+    top: 369px;
+    left: 41px;
+    width: 31px;
+    height: 31px;
+    object-fit: cover;
+}
+.sales-data {
+    position: absolute;
+    top: 284px;
+    left: 82px;
+    display: inline-block;
+    width: 100px;
+    height: 25px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.icon6 {
+    position: absolute;
+    top: 281px;
+    left: 39px;
+    width: 28px;
+    height: 28px;
+    object-fit: cover;
+}
+.duh-trends-palas {
+    position: absolute;
+    top: 70px;
+    left: 51px;
+    font-size: 24px;
+    display: inline-block;
+    text-align: center;
+    width: 160px;
+    height: 66px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.staff-setting-page {
+    width: 100%;
+    position: relative;
+    height: 800px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 18px;
+    color: #fff;
+    font-family: Poppins;
+}
+

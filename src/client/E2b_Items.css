@@ -1,0 +1,521 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #303030;
+    color: #f6f6f6;
+}
+
+.input-field {
+    width: 90%;
+    padding: 4px 4px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #f8f8f8;
+    color: #303030;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-family: 'Poppins';
+}
+
+
+
+.rectangle-container,
+.rectangle-parent3,
+.rectangle-parent5 {
+    cursor: pointer;
+    padding: 0px;
+    margin-top: 10px;
+    background-color: #ffcb74;
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Poppins';
+   
+}
+
+.rectangle-container:hover,
+.rectangle-parent3:hover,
+.rectangle-parent5:hover {
+    background-color: #ffb84d;
+}
+
+.save, .delete1, .edit {
+    font-weight: bold;
+    color: #303030;
+}
+
+.add-item, .delete-item, .edit-item {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover, a:visited, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+.group-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    backdrop-filter: blur(10px);
+    background-color: #303030;
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins';
+}
+.group-item {
+    position: absolute;
+    top: 85px;
+    left: 0px;
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    background-color: #f6f6f6;
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins';
+}
+.items {
+    position: absolute;
+    top: 22px;
+    left: 505px;
+    font-size: 30px;
+    display: inline-block;
+    text-align: center;
+    width: 254px;
+    height: 33px;
+}
+.text {
+    flex: 1;
+    position: relative;
+    line-height: 130%;
+    font-weight: 600;
+}
+.content {
+    align-self: stretch;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px 12px;
+}
+.cell {
+    align-self: stretch;
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.06);
+    border-top: 1px solid #b9b9b9;
+    border-left: 1px solid #b9b9b9;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.row {
+    align-self: stretch;
+    background-color: rgba(255, 255, 255, 0);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 16px;
+    font-family: Poppins;
+}
+.text3 {
+    flex: 1;
+    position: relative;
+    line-height: 130%;
+}
+.cell3 {
+    align-self: stretch;
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0);
+    border-top: 1px solid #b9b9b9;
+    border-left: 1px solid #b9b9b9;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.row1 {
+    align-self: stretch;
+    background-color: rgba(255, 255, 255, 0);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.table-container {
+    display: block;
+    overflow-y: auto;
+    max-height: 100px; /* Adjust the height to your desired value */
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin-top: 20px; /* Optional, adds space between the table and other elements */
+
+    margin-bottom: 20px;
+
+}
+
+.table-1 td, .table-1 th {
+    padding: 20px; /* Adjust as needed */
+}
+
+.table-1 th {
+    position: sticky;
+    top: 0;
+    background-color: #fff; /* Adjust to match your design */
+    z-index: 10;
+}
+
+
+
+.table-1 {
+    box-sizing: border-box;
+    position: absolute;
+    top: 106px;
+    left: 127.72px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #b9b9b9;
+    box-sizing: border-box;
+    width: 20%;
+    display: inline-block;
+    max-height: 400px;
+    overflow-y: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+}
+.group-inner {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 12px;
+    background-color: #303030;
+    width: 355.8px;
+    height: 196.2px;
+}
+.add-item {
+    position: absolute;
+    top: 9.29px;
+    left: 17.72px;
+    font-size: 24px;
+    display: inline-block;
+    color: #ffcb74;
+    width: 222.8px;
+    height: 37.7px;
+    
+}
+.rectangle-div {
+    position: absolute;
+    top: 56px;
+    left: 131.72px;
+    width: 209px;
+    height: 23px;
+}
+.group-child1 {
+    position: absolute;
+    top: 93px;
+    left: 131.72px;
+    width: 209px;
+    height: 23px;
+}
+.group-child2 {
+    position: absolute;
+    top: 130px;
+    left: 131.72px;
+    width: 209px;
+    height: 23px;
+}
+.item-id {
+    position: absolute;
+    top: 60.84px;
+    left: 17.72px;
+    font-weight: 600;
+    display: inline-block;
+    width: 103.5px;
+    height: 14.4px;
+}
+.item-name {
+    position: absolute;
+    top: 98px;
+    left: 17.72px;
+    font-weight: 600;
+    display: inline-block;
+    width: 103.5px;
+    height: 14.4px;
+}
+.item-type {
+    position: absolute;
+    top: 135px;
+    left: 17.72px;
+    font-weight: 600;
+    display: inline-block;
+    width: 103.5px;
+    height: 14.4px;
+}
+.group-child3 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 5px;
+    background-color: #ffcb74;
+    width: 47px;
+    height: 22px;
+    font-family: 'Poppins';
+}
+.save {
+    position: absolute;
+    top: 2px;
+    left: 8px;
+    display: inline-block;
+    width: 32px;
+    height: 14px;
+}
+.rectangle-container {
+    position: absolute;
+    top: 5px;
+    left: 289.72px;
+    width: 47px;
+    height: 22px;
+    color: #303030;
+}
+.rectangle-group {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 355.8px;
+    height: 196.2px;
+}
+.update-stock-pop-up-inner {
+    position: absolute;
+    top: 540px;
+    left: 127px;
+    width: 100%;
+    height: 100%;
+}
+.group-child4 {
+    position: absolute;
+    top: 150px;
+    left: 121.24px;
+    width: 209px;
+    height: 23px;
+    
+}
+
+.group-child5 {
+    position: absolute;
+    top: 67px;
+    left: 121.24px;
+    width: 209px;
+    height: 23px;
+    
+}
+.group-child6 {
+    position: absolute;
+    top: 108px;
+    left: 121.24px;
+    width: 209px;
+    height: 23px;
+}
+.edit-item {
+    position: absolute;
+    top: 13px;
+    left: 18.24px;
+    font-size: 24px;
+    display: inline-block;
+    color: #ffcb74;
+    width: 223px;
+    height: 27px;
+    font-family: 'Poppins';
+}
+.new-item-id1 {
+    position: absolute;
+    top: 160px;
+    left: 18.24px;
+    font-weight: 600;
+    display: inline-block;
+    width: 103.5px;
+    height: 14.4px;
+}
+.item-id1 {
+    position: absolute;
+    top: 68px;
+    left: 18.24px;
+    font-weight: 600;
+    display: inline-block;
+    width: 103.5px;
+    height: 14.4px;
+}
+.item-name1 {
+    position: absolute;
+    top: 112.8px;
+    left: 18.24px;
+    font-weight: 600;
+    display: inline-block;
+    width: 80px.5px;
+    height: 14.4px;
+}
+.rectangle-parent1 {
+    position: absolute;
+    top: 13px;
+    left: 289.24px;
+    width: 47px;
+    height: 22px;
+    color: #303030;
+}
+.update-stock-pop-up-child {
+    position: absolute;
+    top: 540px;
+    left: 496.47px;
+    width: 355.8px;
+    height: 196.2px;
+}
+.group-child8 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 12px;
+    background-color: #303030;
+    width: 281.9px;
+    height: 196.2px;
+    font-family: 'Poppins';
+}
+.group-child9 {
+    position: absolute;
+    top: 95.06px;
+    left: 21.99px;
+    width: 225.1px;
+    height: 26.6px;
+}
+.item-id2 {
+    position: absolute;
+    top: 77px;
+    left: 24.99px;
+    font-weight: 600;
+    display: inline-block;
+    width: 96.6px;
+    height: 17.7px;
+}
+.delete-an-item {
+    position: absolute;
+    top: 41.02px;
+    left: 21.6px;
+    font-weight: 600;
+    display: inline-block;
+    width: 250.6px;
+    height: 14.4px;
+}
+.delete {
+    position: absolute;
+    top: 159.63px;
+    left: 34.97px;
+    font-size: 10px;
+    display: inline-block;
+    color: #303030;
+    width: 75.2px;
+    height: 14.4px;
+}
+.delete-item {
+    position: absolute;
+    top: 12.19px;
+    left: 21.6px;
+    font-size: 24px;
+    display: inline-block;
+    color: #ffcb74;
+    width: 250.6px;
+    height: 14.4px;
+}
+.group-child10 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 5px;
+    background-color: #ffcb74;
+    width: 59.1px;
+    height: 23.7px;
+}
+.delete1 {
+    position: absolute;
+    top: 3.87px;
+    left: 9.39px;
+    display: inline-block;
+    width: 40px;
+    height: 11px;
+    font-family: 'Poppins';
+}
+.rectangle-parent3 {
+    position: absolute;
+    top: 126px;
+    left: 22px;
+    width: 59.1px;
+    height: 23.7px;
+    color: #303030;
+    font-family: 'Poppins';
+}
+.rectangle-parent2 {
+    position: absolute;
+    top: 540px;
+    left: 870.72px;
+    width: 281.9px;
+    height: 196.2px;
+    font-family: 'Poppins';
+}
+.update-stock-pop-up-wrapper {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+.back-to-manage {
+    position: absolute;
+    top: 11px;
+    left: 46px;
+    display: inline-block;
+    width: 210.3px;
+    height: 17.8px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.back-icon-1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 39px;
+    height: 39px;
+    object-fit: cover;
+}
+.back-to-manage-inventory-parent {
+    position: absolute;
+    top: 22px;
+    left: 14px;
+    width: 256.3px;
+    height: 39px;
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Poppins';
+    
+}
+.renter-update-stock {
+    width: 100%;
+    position: relative;
+    background-color: #303030;
+    min-height: 100vh;
+    overflow: hidden;
+    text-align: left;
+    font-size: 12px;
+    color: #f6f6f6;
+    font-family: Poppins;
+}
+

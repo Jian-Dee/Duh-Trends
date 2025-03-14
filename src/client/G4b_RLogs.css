@@ -1,0 +1,459 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    background-color: #303030;
+}
+.group-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    backdrop-filter: blur(10px);
+    background-color: #303030;
+    width: 1280px;
+    height: 800px;
+    font-family: 'Poppins';
+}
+.group-item {
+    position: absolute;
+    top: 85px;
+    left: 0px;
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    background-color: #f6f6f6;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins';
+}
+.management-rent-logs-child {
+    position: absolute;
+    top: 22px;
+    left: 14px;
+    width: 39px;
+    height: 39px;
+    object-fit: cover;
+}
+.rent-logs {
+    position: absolute;
+    top: 22px;
+    left: 505px;
+    font-size: 30px;
+    display: inline-block;
+    text-align: center;
+    width: 254px;
+    height: 33px;
+}
+.back-to-manage {
+    position: absolute;
+    top: 33px;
+    left: 60px;
+    display: inline-block;
+    color: #fff;
+    width: 254px;
+    height: 18px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.group-inner {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 17px;
+    background-color: #303030;
+    width: 470.3px;
+    height: 256.8px;
+}
+.add-user {
+    position: absolute;
+    top: 10.83px;
+    left: 19px;
+    font-size: 22px;
+    display: inline-block;
+    color: #ffcb74;
+    width: 168.8px;
+    height: 18.1px;
+}
+.rectangle-div {
+    position: absolute;
+    top: 9.28px;
+    left: 409.78px;
+    border-radius: 5px;
+    background-color: #ffcb74;
+    width: 40.9px;
+    height: 23.7px;
+}
+.save {
+    position: absolute;
+    border: none;
+    top: 13.59px;
+    left: 411px;
+    font-size: 10px;
+    display: inline-block;
+    color: #303030;
+    background-color: #ffcb74;
+    width: 33.5px;
+    height: 15.1px;
+    font-family: 'Poppins';
+}
+.group-child1 {
+    position: absolute;
+    top: 57.1px;
+    left: 161.38px;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    width: 283.6px;
+    height: 25.2px;
+    font-family: 'Poppins';
+}
+.rent-id {
+    position: absolute;
+    top: 61.49px;
+    left: 25.15px;
+    font-weight: 600;
+    display: inline-block;
+    width: 100.9px;
+    height: 17.6px;
+}
+.group-child2 {
+    position: absolute;
+    top: 91.12px;
+    left: 161.38px;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    width: 283.6px;
+    height: 25.2px;
+    font-family: 'Poppins';
+}
+.renter-id {
+    position: absolute;
+    top: 95.23px;
+    left: 25.02px;
+    font-weight: 600;
+    display: inline-block;
+    width: 89.1px;
+    height: 18.3px;
+}
+.group-child3 {
+    position: absolute;
+    top: 125.14px;
+    left: 161.38px;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    width: 283.6px;
+    height: 25.2px;
+    font-family: 'Poppins';
+}
+.area-id {
+    position: absolute;
+    top: 129.53px;
+    left: 25.23px;
+    font-weight: 600;
+    display: inline-block;
+    width: 103.5px;
+    height: 17.6px;
+}
+.group-child4 {
+    position: absolute;
+    top: 159.16px;
+    left: 160.26px;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    width: 283.6px;
+    height: 25.2px;
+    font-family: 'Poppins';
+}
+.rent-started {
+    position: absolute;
+    top: 163.55px;
+    left: 24.11px;
+    font-weight: 600;
+    display: inline-block;
+    width: 103.5px;
+    height: 17.6px;
+}
+.group-child5 {
+    position: absolute;
+    top: 193.31px;
+    left: 160.26px;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    width: 283.6px;
+    height: 25.2px;
+    font-family: 'Poppins';
+}
+.rent-ended {
+    position: absolute;
+    top: 197.7px;
+    left: 24.11px;
+    font-weight: 600;
+    display: inline-block;
+    width: 103.5px;
+    height: 17.6px;
+}
+.rectangle-group {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 470.3px;
+    height: 256.8px;
+}
+.management-rent-logs-inner {
+    position: absolute;
+    top: 502px;
+    left: 171px;
+    width: 470.3px;
+    height: 256.8px;
+}
+.group-child6 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 17px;
+    background-color: #303030;
+    width: 437.6px;
+    height: 256.8px;
+    font-family: 'Poppins';
+}
+.edit-user {
+    position: absolute;
+    top: 15.14px;
+    left: 17.79px;
+    display: inline-block;
+    width: 157px;
+    height: 18.1px;
+}
+.group-child7 {
+    position: absolute;
+    top: 16.8px;
+    left: 380.56px;
+    border-radius: 5px;
+    background-color: #ffcb74;
+    width: 38.8px;
+    height: 25.9px;
+    font-family: 'Poppins';
+}
+.save1 {
+    position: absolute;
+    border: none;
+    top: 22.19px;
+    left: 381px;
+    font-size: 10px;
+    display: inline-block;
+    color: #303030;
+    background-color: #ffcb74;
+    width: 32.5px;
+    height: 15.1px;
+    font-family: 'Poppins';
+}
+.rectangle-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 437.6px;
+    height: 256.8px;
+    font-size: 22px;
+    color: #ffcb74;
+}
+.group-child8 {
+    position: absolute;
+    top: 57px;
+    left: 150.91px;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    width: 262px;
+    height: 24.8px;
+    font-family: 'Poppins';
+}
+.rent-id1 {
+    position: absolute;
+    top: 61.31px;
+    left: 25.14px;
+    font-weight: 600;
+    display: inline-block;
+    width: 93.3px;
+    height: 17.2px;
+}
+.group-child9 {
+    position: absolute;
+    top: 91.48px;
+    left: 150.91px;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    width: 262px;
+    height: 24.8px;
+    font-family: 'Poppins';
+}
+.renter-id1 {
+    position: absolute;
+    top: 94.71px;
+    left: 25.14px;
+    font-weight: 600;
+    display: inline-block;
+    width: 81.7px;
+    height: 18.3px;
+}
+.group-child10 {
+    position: absolute;
+    top: 124.88px;
+    left: 150.91px;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    width: 262px;
+    height: 25.9px;
+    font-family: 'Poppins';
+}
+.area-id1 {
+    position: absolute;
+    top: 129.19px;
+    left: 25.14px;
+    font-weight: 600;
+    display: inline-block;
+    width: 95.4px;
+    height: 18.3px;
+}
+.group-child11 {
+    position: absolute;
+    top: 159.36px;
+    left: 149.86px;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    width: 262px;
+    height: 24.8px;
+    font-family: 'Poppins';
+}
+.rent-started1 {
+    position: absolute;
+    top: 163.75px;
+    left: 24.09px;
+    font-weight: 600;
+    display: inline-block;
+    width: 112.1px;
+    height: 17.2px;
+}
+.group-child12 {
+    position: absolute;
+    top: 192.76px;
+    left: 149.86px;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    width: 262px;
+    height: 25.9px;
+    font-family: 'Poppins';
+}
+.rent-ended1 {
+    position: absolute;
+    top: 197.07px;
+    left: 24.09px;
+    font-weight: 600;
+    display: inline-block;
+    width: 95.4px;
+    height: 18.3px;
+}
+.group-parent {
+    position: absolute;
+    top: 503.1px;
+    left: 655.21px;
+    width: 437.6px;
+    height: 256.8px;
+}
+.text {
+    flex: 1;
+    position: relative;
+    line-height: 130%;
+    font-weight: 600;
+}
+.content {
+    align-self: stretch;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px 12px;
+}
+.cell {
+    align-self: stretch;
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.06);
+    border-top: 1px solid #b9b9b9;
+    border-left: 1px solid #b9b9b9;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.row {
+    align-self: stretch;
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 14px;
+    font-family: Poppins;
+}
+.text5 {
+    flex: 1;
+    position: relative;
+    line-height: 130%;
+}
+.cell5 {
+    align-self: stretch;
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0);
+    border-top: 1px solid #b9b9b9;
+    border-left: 1px solid #b9b9b9;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.row1 {
+    align-self: stretch;
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.table {
+    align-self: stretch;
+    flex: 1;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #b9b9b9;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.table-2 {
+    position: absolute;
+    top: 110px;
+    left: 62px;
+    width: 1156px;
+    height: 366px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 12px;
+    color: #000;
+    font-family: Inter;
+}
+.management-rent-logs {
+    width: 100%;
+    position: relative;
+    background-color: #303030;
+    min-height: 100vh;
+    overflow: hidden;
+    text-align: left;
+    font-size: 14px;
+    color: #f6f6f6;
+    font-family: Poppins;
+}

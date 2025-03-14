@@ -1,0 +1,431 @@
+body {
+    background-image: url('rd.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Poppins;
+}
+.rent-payment-log-child {
+    position: absolute;
+    top: 24px;
+    left: 261px;
+    border-radius: 45px;
+    background-color: #f6f6f6;
+    width: 995px;
+    height: 752px;
+}
+
+.rent-payment-log-item {
+    position: absolute;
+    top: 446px;
+    left: 23px;
+    border-radius: 26px;
+    background-color: #f6f6f6;
+    width: 290px;
+    height: 52px;
+}
+.search-bar {
+    width: 250px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #333; 
+    color: white;
+    outline: none;
+    font-size: 14px;
+    padding-left: 40px;
+    position: relative;
+    font-family: Poppins;
+}
+.search-text-field {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 22px;
+    background-color: #303030;
+    width: 437px;
+    height: 41px;
+}
+.search-icon {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    width: 28px;
+    height: 28px;
+    object-fit: cover;
+}
+.search-group {
+    position: absolute;
+    top: 170px;
+    left: 305px;
+    width: 437px;
+    height: 41px;
+}
+.rent-payment-log1 {
+    position: absolute;
+    top: 175px;
+    left: 60px;
+    display: inline-block;
+    width: 189px;
+    height: 25px;
+    text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover, a:visited, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+.side-buttons {
+    position: absolute;
+    top: 281px;
+    left: 18px;
+    width: 294px;
+    height: 281px;
+}
+.settings-icon {
+    position: absolute;
+    top: 260px;
+    left: 22px;
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}
+.settings {
+    position: absolute;
+    top: 537px;
+    left: 88px;
+    display: inline-block;
+    width: 189px;
+    height: 25px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.settings-button {
+    position: absolute;
+    top: 260px;
+    left: 72px;
+    width: 236px;
+    height: 25px;
+}
+.home {
+    position: absolute;
+    top: 190px;
+    left: 83px;
+    display: inline-block;
+    width: 74px;
+    height: 27px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.home-icon {
+    position: absolute;
+    top: 189px;
+    left: 39px;
+    width: 29px;
+    height: 29px;
+    object-fit: cover;
+}
+.home-button {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 294px;
+    height: 52px;
+}
+
+.payment-icon {
+    position: absolute;
+    top: 456px;
+    left: 38px;
+    width: 31px;
+    height: 31px;
+    object-fit: cover;
+}
+
+.manage-inventory {
+    position: absolute;
+    top:77px;
+    left: 66px;
+    display: inline-block;
+    width: 140px;
+    height: 50px;
+    text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+}
+.inventory-icon {
+    position: absolute;
+    top: 90px;
+    left: 20px;
+    width: 29px;
+    height: 29px;
+    object-fit: cover;
+}
+.sales-data {
+    position: absolute;
+    top: 3px;
+    left: 43px;
+    display: inline-block;
+    width: 100px;
+    height: 25px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.sales-icon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 28px;
+    height: 28px;
+    object-fit: cover;
+}
+.sales-data-button {
+    position: absolute;
+    top: 0px;
+    left: 21px;
+    width: 143px;
+    height: 28px;
+}
+.rent-payment-log2 {
+    position: absolute;
+    top: 63px;
+    left: 290px;
+    font-size: 40px;
+    font-weight: 500;
+    color: #303030;
+    text-align: center;
+    display: inline-block;
+    width: 940px;
+    height: 49px;
+    text-shadow: 1px 0 0 #303030, 0 1px 0 #303030, -1px 0 0 #303030, 0 -1px 0 #303030;
+}
+.text {
+    flex: 1;
+    position: relative;
+    line-height: 130%;
+    font-weight: 600;
+}
+.content {
+    align-self: stretch;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px 12px;
+}
+.cell {
+    align-self: stretch;
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.06);
+    border-top: 1px solid #b9b9b9;
+    border-left: 1px solid #b9b9b9;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.row {
+    align-self: stretch;
+    background-color: rgba(255, 255, 255, 0);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 14px;
+    font-family: Poppins;
+}
+.text5 {
+    flex: 1;
+    position: relative;
+    line-height: 130%;
+}
+.cell5 {
+    align-self: stretch;
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0);
+    border-top: 1px solid #b9b9b9;
+    border-left: 1px solid #b9b9b9;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.row1 {
+    align-self: stretch;
+    background-color: rgba(255, 255, 255, 0);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+/* .table {
+    align-self: stretch;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #b9b9b9;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.table-2 {
+    position: absolute;
+    top: 221px;
+    left: 306px;
+    width: 908px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 12px;
+    color: #000;
+    font-family: Inter;
+} */
+.group-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 12px;
+    background-color: #303030;
+    width: 222px;
+    height: 46px;
+}
+.add-history-record {
+    position: absolute;
+    top: 14px;
+    left: 46px;
+    line-height: 20px;
+    display: inline-block;
+    width: 169px;
+    height: 18px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.icon5 {
+    position: absolute;
+    top: 9px;
+    left: 12px;
+    width: 27px;
+    height: 27px;
+    object-fit: cover;
+}
+.rectangle-parent {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 222px;
+    height: 46px;
+}
+.rent-payment-log-inner {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 230px;
+    height: 46px;
+    font-size: 17px;
+
+}
+.group-item {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 12px;
+    background-color: #303030;
+    width: 167px;
+    height: 63px;
+}
+.rental-logs {
+    position: absolute;
+    top: 17px;
+    left: 51px;
+    display: inline-block;
+    width: 115px;
+    height: 22px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.icon6 {
+    position: absolute;
+    top: 17px;
+    left: 13px;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+.duh-trends-palas {
+    position: absolute;
+    top: 70px;
+    left: 51px;
+    font-size: 24px;
+    display: inline-block;
+    text-align: center;
+    width: 160px;
+    height: 66px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.profile-icon {
+    position: absolute;
+    top: 47px;
+    left: 1164px;
+    width: 62px;
+    height: 62px;
+    object-fit: cover;
+}
+.rent-payment-log {
+    width: 100%;
+    position: relative;
+    height: 800px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 18px;
+    color: #fff;
+    font-family: Poppins;
+}
+
+.table-container {
+        /* position: absolute;
+        top: 318px;
+        left: 316px; */
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #b9b9b9;
+    box-sizing: border-box;
+    width: 100px;
+    overflow: hidden;
+    font-size: 12px;
+    color: #000;
+    font-family: Inter;
+}
+
+.table {
+    position: absolute;
+    top: 250px;
+    left: 300px;
+    width: 50%;
+    border-collapse: collapse;
+    display: inline-block;
+    overflow-y: auto;
+    height: 500px;
+}   
+
+.table th, .table td {
+    border: 1px solid #b9b9b9;
+    padding: 8px;
+    text-align: left;
+    font-size: 24px;
+    background-color: #777373; 
+}
+
+.table th {
+    /* background-color: rgba(0, 0, 0, 0.06); */
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    /* z-index: 10; */
+}
+
+.table tbody td {
+    background-color: rgba(255, 255, 255, 0);
+}

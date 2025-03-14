@@ -173,9 +173,9 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `AddNewUser` (IN `name_param` VARCHA
     VALUES (name_param, username_param, password_param, user_role_id_param, new_contact_id, gender_id_param);
     SET new_user_id = LAST_INSERT_ID();
 
-    IF role_name_param = 'renter' THEN
-        INSERT INTO tbl_renter (renter_name)
-        VALUES (name_param);
+    IF LOWER(role_name_param) = 'renter' THEN
+        INSERT INTO tbl_renter (renter_name,renter_username)
+        VALUES (name_param, username_param);
     END IF;
 END$$ --done
 
@@ -914,17 +914,18 @@ INSERT INTO `tbl_rent` (`rent_id`, `renter_id`, `area_id`, `rent_started`, `rent
 
 CREATE TABLE `tbl_renter` (
   `renter_id` int(11) NOT NULL,
-  `renter_name` varchar(255) NOT NULL
+  `renter_name` varchar(255) NOT NULL,
+  `renter_username` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `tbl_renter`
 --
 
-INSERT INTO `tbl_renter` (`renter_id`, `renter_name`) VALUES
-(1, 'Alice'),
-(2, 'Bob'),
-(3, 'Carol');
+INSERT INTO `tbl_renter` (`renter_id`, `renter_name`, `renter_username`) VALUES
+(1, 'Alice','Alice'),
+(2, 'Bob','Bob'),
+(3, 'Carol','Carol');
 
 -- --------------------------------------------------------
 

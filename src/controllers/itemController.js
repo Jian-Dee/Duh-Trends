@@ -33,14 +33,19 @@ const editItem = async (req, res) => {
   
   const addItemToStock = async (req, res) => {
     try {
-      const { renterId, itemId, quantity, itemPrice, itemDescription } = req.body;
-      await ItemModel.addItemToStock(renterId, itemId, quantity, itemPrice, itemDescription);
-      res.json({ message: 'Item added to stock successfully' });
+        console.log(req.body); // Add this to debug
+        const { itemId, newQuantity } = req.body;
+        if (!itemId || !newQuantity) {
+            return res.status(400).json({ error: "itemId and newQuantity are required" });
+        }
+        await ItemModel.addItemToStock(itemId, newQuantity);
+        res.json({ message: 'Item quantity updated successfully' });
     } catch (error) {
-      res.status(500).json({ error: error.message });
+        res.status(500).json({ error: error.message });
     }
-  };
-  
+};
+
+
   const editItemQuantity = async (req, res) => {
     try {
       const { renterId, itemId, newQuantity, newPrice, newDescription } = req.body;
@@ -65,7 +70,7 @@ const editItem = async (req, res) => {
     try {
       const { renterId } = req.params;
       const stock = await ItemModel.returnRenterStock(renterId);
-      res.json({ stock });
+      res.json( {stock} );
     } catch (error) {
       res.status(500).json({ error: error.message });
     }
@@ -114,6 +119,23 @@ const editItem = async (req, res) => {
       res.status(500).json({ error: error.message });
     }
   };
+
+  const getAllItems = async (req, res) => {
+    try {
+        const { renterId } = req.params;
+
+        if (!renterId) {
+            return res.status(400).json({ error: 'Renter ID is required' });
+        }
+
+        const items = await ItemModel.getAllItems(renterId);
+        res.json({ items });
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+};
+
+  
   
   module.exports = { 
     addItem, 
@@ -125,8 +147,10 @@ const editItem = async (req, res) => {
     returnRenterStock, 
     getTotalItemsInStockByRenter, 
     getTotalLowStockByRenter,
-    getTotalOutOfStockItems 
-  };
+    getTotalOutOfStockItems,
+    getAllItems 
+};
+
   
   
   

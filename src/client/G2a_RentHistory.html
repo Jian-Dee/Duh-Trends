@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet"  href="G2b_RentHistory.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+  	
+  	
+  	
+</head>
+<body>
+  	
+  	<div class="management-rental-history">
+		
+    		<div class="update-stock-pop-up-wrapper">
+      			<div class="update-stock-pop-up-wrapper">
+        				<div class="update-stock-pop-up-wrapper">
+          					<div class="group-child">
+					
+          					</div>
+          					<div class="group-item">
+								
+          					</div>
+        				</div>
+      			</div>
+    		</div>
+			<img class="down-icon" alt="" src="down-icon.png">
+			<div class="dropdown">
+				<button class="dropdown-btn" onclick="toggleDropdown()">RENTER 1</button>
+				<ul class="dropdown-menu" id="dropdownMenu">
+					
+				</ul>
+    		
+    		<b class="rent-history">Rent History</b>
+			<a href="D3a_RentPayTrack.html">
+    		<b class="back-to-rent">Back to Rent Payment Tracking</b>
+			<img class="management-rental-history-child" alt="" src="back-icon.png"></a>
+			
+    		</div>
+
+    		<div class="table">
+      			<div class="row">
+        				<div class="cell">
+          					<div class="content">
+            						<div class="text">Payment_History_ID</div>
+          					</div>
+        				</div>
+        				<div class="cell">
+          					<div class="content">
+            						<div class="text">Payment_ID</div>
+          					</div>
+        				</div>
+        				<div class="cell">
+          					<div class="content">
+            						<div class="text">Payment_Date</div>
+          					</div>
+        				</div>
+        				<div class="cell">
+          					<div class="content">
+            						<div class="text">Amount</div>
+          					</div>
+        				</div>
+        				<div class="cell">
+          					<div class="content">
+            						<div class="text">Remarks_ID</div>
+          					</div>
+        				</div>
+      			</div>
+      			<div class="row1">
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+      			</div>
+				  <div class="row1">
+					<div class="cell5">
+						  <div class="content">
+								<div class="text5">
+								</div>
+						  </div>
+					</div>
+					<div class="cell5">
+						  <div class="content">
+								<div class="text5">
+								</div>
+						  </div>
+					</div>
+					<div class="cell5">
+						  <div class="content">
+								<div class="text5">
+								</div>
+						  </div>
+					</div>
+					<div class="cell5">
+						  <div class="content">
+								<div class="text5">
+								</div>
+						  </div>
+					</div>
+					<div class="cell5">
+						  <div class="content">
+								<div class="text5">
+								</div>
+						  </div>
+					</div>
+			  </div>
+			  <div class="row1">
+				<div class="cell5">
+					  <div class="content">
+							<div class="text5">
+							</div>
+					  </div>
+				</div>
+				<div class="cell5">
+					  <div class="content">
+							<div class="text5">
+							</div>
+					  </div>
+				</div>
+				<div class="cell5">
+					  <div class="content">
+							<div class="text5">
+							</div>
+					  </div>
+				</div>
+				<div class="cell5">
+					  <div class="content">
+							<div class="text5">
+							</div>
+					  </div>
+				</div>
+				<div class="cell5">
+					  <div class="content">
+							<div class="text5">
+							</div>
+					  </div>
+				</div>
+		  </div>
+		  <div class="row1">
+			<div class="cell5">
+				  <div class="content">
+						<div class="text5">
+						</div>
+				  </div>
+			</div>
+			<div class="cell5">
+				  <div class="content">
+						<div class="text5">
+						</div>
+				  </div>
+			</div>
+			<div class="cell5">
+				  <div class="content">
+						<div class="text5">
+						</div>
+				  </div>
+			</div>
+			<div class="cell5">
+				  <div class="content">
+						<div class="text5">
+						</div>
+				  </div>
+			</div>
+			<div class="cell5">
+				  <div class="content">
+						<div class="text5">
+						</div>
+				  </div>
+			</div>
+	  </div>
+	  <div class="row1">
+		<div class="cell5">
+			  <div class="content">
+					<div class="text5">
+					</div>
+			  </div>
+		</div>
+		<div class="cell5">
+			  <div class="content">
+					<div class="text5">
+					</div>
+			  </div>
+		</div>
+		<div class="cell5">
+			  <div class="content">
+					<div class="text5">
+					</div>
+			  </div>
+		</div>
+		<div class="cell5">
+			  <div class="content">
+					<div class="text5">
+					</div>
+			  </div>
+		</div>
+		<div class="cell5">
+			  <div class="content">
+					<div class="text5">
+					</div>
+			  </div>
+		</div>
+  </div>
+      			<div class="row1">
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+      			</div>
+      			<div class="row1">
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+      			</div>
+      			<div class="row1">
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+      			</div>
+      			<div class="row1">
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+      			</div>
+      			<div class="row1">
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+      			</div>
+      			<div class="row1">
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+      			</div>
+      			<div class="row1">
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+      			</div>
+      			<div class="row1">
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+      			</div>
+      			<div class="row1">
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+      			</div>
+      			<div class="row1">
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+      			</div>
+      			<div class="row1">
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+      			</div>
+      			<div class="row1">
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+      			</div>
+      			<div class="row1">
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+        				<div class="cell5">
+          					<div class="content">
+            						<div class="text5">
+            						</div>
+          					</div>
+        				</div>
+      			</div>
+    		</div>
+    	
+  	
+  	<script>
+		function toggleDropdown() {
+			document.getElementById("dropdownMenu").classList.toggle("show");
+		}
+		
+		// Close dropdown if clicked outside
+		document.addEventListener("click", function(event) {
+			var dropdown = document.querySelector(".dropdown");
+			if (!dropdown.contains(event.target)) {
+				document.getElementById("dropdownMenu").classList.remove("show");
+			}
+		});
+		</script>
+
+
+  	
+</body>
+</html>

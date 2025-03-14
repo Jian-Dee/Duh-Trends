@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <link rel="stylesheet" href="G5b_AreaLog.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+</head>
+<body>
+    <div class="management-rent-logs">
+		<div class="update-stock-pop-up-wrapper">
+            <div class="update-stock-pop-up-wrapper">
+                <div class="update-stock-pop-up-wrapper">
+                    <div class="group-child"></div>
+                    <div class="group-item"></div>
+                </div>
+            </div>
+        </div>
+        <a href="D4a_ManageUsers.html">
+            <img class="management-rent-logs-child" alt="" src="back-icon.png">
+            <b class="back-to-manage">Back to Manage Users</b></a>
+        <b class="rent-logs">Area Logs</b>
+
+        <!-- ADD USER SECTION -->
+        <div class="management-rent-logs-inner">
+            <div class="rectangle-group">
+                <div class="group-inner"></div>
+                <b class="add-user">ADD AREA</b>
+                <div class="rectangle-div"></div>
+                <button class="save" onclick="addRentLog()">Save</button>
+                <input type="text" class="group-child1" id="add-rent-id" placeholder="Area_ID">
+                <input type="text" class="group-child2" id="add-renter-id" placeholder="Area_Name">
+                <input type="text" class="group-child3" id="add-area-id" placeholder="Type_Name">
+                <input type="text" class="group-child4" id="add-rent-started" placeholder="Size">
+                <input type="text" class="group-child5" id="add-rent-ended" placeholder="Prices">
+                <input type="text" class="group-child6" id="add-description" placeholder="Description">
+                <div class="rent-id">Area_ID</div>
+                <div class="renter-id">Area_Name</div>
+                <div class="area-id">Type_Name</div>
+                <div class="rent-started">Size</div>
+                <div class="rent-ended">Prices</div>
+                <div class="description">Description</div>
+            </div>
+        </div>
+
+        <!-- EDIT USER SECTION -->
+        <div class="group-parent">
+            <div class="rectangle-container">
+                <div class="group-inner1"></div>
+                <b class="edit-user">EDIT AREA</b>
+                <div class="group-child7"></div>
+                <button class="save1" onclick="editRentLog()">Save</button>
+            </div>
+            <input type="text" class="group-child8" id="edit-rent-id" placeholder="Area_ID">
+            <input type="text" class="group-child9" id="edit-renter-id" placeholder="Area_Name">
+            <input type="text" class="group-child10" id="edit-area-id" placeholder="Type_Name">
+            <input type="text" class="group-child11" id="edit-rent-started" placeholder="Size">
+            <input type="text" class="group-child12" id="edit-rent-ended" placeholder="Prices">
+            <input type="text" class="group-child13" id="edit-description" placeholder="Description">
+            <div class="rent-id1">Area_ID</div>
+            <div class="renter-id1">Area_Name</div>
+            <div class="area-id1">Type_Name</div>
+            <div class="rent-started1">Size</div>
+            <div class="rent-ended1">Prices</div>
+            <div class="description1">Description</div>
+        </div>
+
+        <!-- TABLE SECTION -->
+        <div class="table-2">
+            <div class="table">
+                <div class="row">
+                    <div class="cell">
+                        <div class="content">
+                            <div class="text">Area_ID</div>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="content">
+                            <div class="text">Area_Name</div>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="content">
+                            <div class="text">Type_Name</div>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="content">
+                            <div class="text">Size</div>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="content">
+                            <div class="text">Price</div>
+                        </div>
+                    </div>
+					<div class="cell">
+                        <div class="content">
+                            <div class="text">Description</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row1">
+					<div class="cell5">
+						  <div class="content">
+								<div class="text5">
+								</div>
+						  </div>
+					</div>
+					<div class="cell5">
+						  <div class="content">
+								<div class="text5">
+								</div>
+						  </div>
+					</div>
+					<div class="cell5">
+						  <div class="content">
+								<div class="text5">
+								</div>
+						  </div>
+					</div>
+					<div class="cell5">
+						  <div class="content">
+								<div class="text5">
+								</div>
+						  </div>
+					</div>
+					<div class="cell5">
+						  <div class="content">
+								<div class="text5">
+								</div>
+						  </div>
+					</div>
+					<div class="cell5">
+						<div class="content">
+							  <div class="text5">
+							  </div>
+						</div>
+				  </div>
+			  </div>
+			  <div class="row1">
+					<div class="cell5">
+						  <div class="content">
+								<div class="text5">
+								</div>
+						  </div>
+					</div>
+					<div class="cell5">
+						  <div class="content">
+								<div class="text5">
+								</div>
+						  </div>
+					</div>
+					<div class="cell5">
+						  <div class="content">
+								<div class="text5">
+								</div>
+						  </div>
+					</div>
+					<div class="cell5">
+						  <div class="content">
+								<div class="text5">
+								</div>
+						  </div>
+					</div>
+					<div class="cell5">
+						  <div class="content">
+								<div class="text5">
+								</div>
+						  </div>
+					</div>
+					<div class="cell5">
+						<div class="content">
+							  <div class="text5">
+							  </div>
+						</div>
+				  </div>
+			  </div>
+			  <div class="row1">
+					<div class="cell5">
+						  <div class="content">
+								<div class="text5">
+								</div>
+						  </div>
+					</div>
+					<div class="cell5">
+						  <div class="content">
+								<div class="text5">
+								</div>
+						  </div>
+					</div>
+					<div class="cell5">
+						  <div class="content">
+								<div class="text5">
+								</div>
+						  </div>
+					</div>
+					<div class="cell5">
+						  <div class="content">
+								<div class="text5">
+								</div>
+						  </div>
+					</div>
+					<div class="cell5">
+						  <div class="content">
+								<div class="text5">
+								</div>
+						  </div>
+					</div>
+					<div class="cell5">
+						<div class="content">
+							  <div class="text5">
+							  </div>
+						</div>
+				  </div>
+			  </div>
+			  <div class="row1">
+				<div class="cell5">
+					  <div class="content">
+							<div class="text5">
+							</div>
+					  </div>
+				</div>
+				<div class="cell5">
+					<div class="content">
+						  <div class="text5">
+						  </div>
+					</div>
+			  </div>
+				<div class="cell5">
+					  <div class="content">
+							<div class="text5">
+							</div>
+					  </div>
+				</div>
+				<div class="cell5">
+					  <div class="content">
+							<div class="text5">
+							</div>
+					  </div>
+				</div>
+				<div class="cell5">
+					  <div class="content">
+							<div class="text5">
+							</div>
+					  </div>
+				</div>
+				<div class="cell5">
+					  <div class="content">
+							<div class="text5">
+							</div>
+					  </div>
+				</div>
+		  </div>
+		  <div class="row1">
+				<div class="cell5">
+					  <div class="content">
+							<div class="text5">
+							</div>
+					  </div>
+				</div>
+				<div class="cell5">
+					<div class="content">
+						  <div class="text5">
+						  </div>
+					</div>
+			  </div>
+				<div class="cell5">
+					  <div class="content">
+							<div class="text5">
+							</div>
+					  </div>
+				</div>
+				<div class="cell5">
+					  <div class="content">
+							<div class="text5">
+							</div>
+					  </div>
+				</div>
+				<div class="cell5">
+					  <div class="content">
+							<div class="text5">
+							</div>
+					  </div>
+				</div>
+				<div class="cell5">
+					  <div class="content">
+							<div class="text5">
+							</div>
+					  </div>
+				</div>
+		  </div>
+		  <div class="row1">
+				<div class="cell5">
+					  <div class="content">
+							<div class="text5">
+							</div>
+					  </div>
+				</div>
+				<div class="cell5">
+					  <div class="content">
+							<div class="text5">
+							</div>
+					  </div>
+				</div>
+				<div class="cell5">
+					<div class="content">
+						  <div class="text5">
+						  </div>
+					</div>
+			  </div>
+				<div class="cell5">
+					  <div class="content">
+							<div class="text5">
+							</div>
+					  </div>
+				</div>
+				<div class="cell5">
+					  <div class="content">
+							<div class="text5">
+							</div>
+					  </div>
+				</div>
+				<div class="cell5">
+					  <div class="content">
+							<div class="text5">
+							</div>
+					  </div>
+				</div>
+		  </div><div class="row1">
+			<div class="cell5">
+				  <div class="content">
+						<div class="text5">
+						</div>
+				  </div>
+			</div>
+			<div class="cell5">
+				<div class="content">
+					  <div class="text5">
+					  </div>
+				</div>
+		  </div>
+			<div class="cell5">
+				  <div class="content">
+						<div class="text5">
+						</div>
+				  </div>
+			</div>
+			<div class="cell5">
+				  <div class="content">
+						<div class="text5">
+						</div>
+				  </div>
+			</div>
+			
+			<div class="cell5">
+				  <div class="content">
+						<div class="text5">
+						</div>
+				  </div>
+			</div>
+			<div class="cell5">
+				  <div class="content">
+						<div class="text5">
+						</div>
+				  </div>
+			</div>
+	  </div>
+	  <div class="row1">
+		<div class="cell5">
+			<div class="content">
+				  <div class="text5">
+				  </div>
+			</div>
+	  </div>
+			<div class="cell5">
+				  <div class="content">
+						<div class="text5">
+						</div>
+				  </div>
+			</div>
+			<div class="cell5">
+				  <div class="content">
+						<div class="text5">
+						</div>
+				  </div>
+			</div>
+			<div class="cell5">
+				  <div class="content">
+						<div class="text5">
+						</div>
+				  </div>
+			</div>
+			<div class="cell5">
+				  <div class="content">
+						<div class="text5">
+						</div>
+				  </div>
+			</div>
+			<div class="cell5">
+				  <div class="content">
+						<div class="text5">
+						</div>
+				  </div>
+			</div>
+	  </div>
+	  <div class="row1">
+		<div class="cell5">
+			<div class="content">
+				  <div class="text5">
+				  </div>
+			</div>
+	  </div>
+			<div class="cell5">
+				  <div class="content">
+						<div class="text5">
+						</div>
+				  </div>
+			</div>
+			<div class="cell5">
+				  <div class="content">
+						<div class="text5">
+						</div>
+				  </div>
+			</div>
+			<div class="cell5">
+				  <div class="content">
+						<div class="text5">
+						</div>
+				  </div>
+			</div>
+			<div class="cell5">
+				  <div class="content">
+						<div class="text5">
+						</div>
+				  </div>
+			</div>
+			<div class="cell5">
+				  <div class="content">
+						<div class="text5">
+						</div>
+				  </div>
+			</div>
+	  </div>
+            </div>
+        </div>
+    </div>
+
+        <script>
+            let rentLogs = [];
+
+            function addRentLog() {
+                const rentLog = {
+                    Rent_ID: document.getElementById('add-rent-id').value,
+                    Renter_ID: document.getElementById('add-renter-id').value,
+                    Area_ID: document.getElementById('add-area-id').value,
+                    Rent_Started: document.getElementById('add-rent-started').value,
+                    Rent_Ended: document.getElementById('add-rent-ended').value,
+                    Description: document.getElementById('add-description').value
+                };
+
+                if (Object.values(rentLog).every(field => field)) {
+                    rentLogs.push(rentLog);
+                    alert('Rent log added successfully!');
+                } else {
+                    alert('Please fill in all fields.');
+                }
+            }
+
+            function editRentLog() {
+                const rentId = document.getElementById('edit-rent-id').value;
+                const rentLog = rentLogs.find(log => log.Rent_ID === rentId);
+
+                if (rentLog) {
+                    rentLog.Renter_ID = document.getElementById('edit-renter-id').value;
+                    rentLog.Area_ID = document.getElementById('edit-area-id').value;
+                    rentLog.Rent_Started = document.getElementById('edit-rent-started').value;
+                    rentLog.Rent_Ended = document.getElementById('edit-rent-ended').value;
+                    rentLog.Description = document.getElementById('edit-description').value;
+                    alert('Rent log updated successfully!');
+                } else {
+                    alert('Rent log not found.');
+                }
+            }
+        </script>
+</body>
+</html>

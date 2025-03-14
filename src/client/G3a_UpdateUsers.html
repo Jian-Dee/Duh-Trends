@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <link rel="stylesheet" href="G3b_UpdateUsers.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+</head>
+<body>
+    <div class="management-update-users">
+        <div class="update-stock-pop-up-wrapper">
+            <div class="update-stock-pop-up-wrapper">
+                <div class="update-stock-pop-up-wrapper">
+                    <div class="group-child"></div>
+                    <div class="group-item"></div>
+                </div>
+            </div>
+        </div>
+		<a href="D4a_ManageUsers.html">
+        <img class="management-update-users-child" alt="" src="back-icon.png">
+        <b class="back-to-manage">Back to Manage Users</b></a>
+		
+ 		<b class="update-users">Update Users</b>
+        <!-- ADD USER SECTION -->
+        <div class="management-update-users-inner">
+            <div class="rectangle-group">
+                <div class="group-inner"></div>
+                <b class="add-user">ADD USER</b>
+                <div class="rectangle-container">
+                    <div class="rectangle-div"></div>
+                    <button class="save" onclick="addUser()">Save</button>
+                </div>
+                <input type="text" class="group-child1" placeholder="User_ID">
+                <input type="text" class="group-child2" placeholder="Name">
+                <input type="text" class="group-child3" placeholder="Gender">
+                <input type="text" class="group-child4" placeholder="Contact">
+                <input type="text" class="group-child5" placeholder="Username">
+                <input type="password" class="group-child6" placeholder="Password">
+                <input type="text" class="group-child7" placeholder="Role">
+                <div class="user-id">User_ID</div>
+                <div class="name">Name</div>
+                <div class="gender">Gender</div>
+                <div class="contact">Contact</div>
+                <div class="username">Username</div>
+                <div class="password">Password</div>
+                <div class="role">Role</div>
+            </div>
+        </div>
+
+        <!-- EDIT USER SECTION -->
+        <div class="group-div">
+            <div class="rectangle-group">
+                <div class="group-inner"></div>
+                <b class="add-user">EDIT USER</b>
+                <div class="rectangle-container">
+                    <div class="rectangle-div"></div>
+                    <button class="save" onclick="addUser()">Save</button>
+                </div>
+                <input type="text" class="group-child1" placeholder="User_ID">
+                <input type="text" class="group-child2" placeholder="Name">
+                <input type="text" class="group-child3" placeholder="Gender">
+                <input type="text" class="group-child4" placeholder="Contact">
+                <input type="text" class="group-child5" placeholder="Username">
+                <input type="password" class="group-child6" placeholder="Password">
+                <input type="text" class="group-child7" placeholder="Role">
+                <div class="user-id">User_ID</div>
+                <div class="name">Name</div>
+                <div class="gender">Gender</div>
+                <div class="contact">Contact</div>
+                <div class="username">Username</div>
+                <div class="password">Password</div>
+                <div class="role">Role</div>
+            </div>
+        </div>
+
+        <!-- DELETE USER SECTION -->
+        <div class="rectangle-parent3">
+            <div class="group-child17"></div>
+            <div class="group-child18"></div>
+            <div class="group-child19"></div>
+            <div class="user-id2">User_ID</div>
+            <div class="delete-a-user">Delete a user by User_ID.</div>
+			<div class="delete-container">
+            <button class="delete-button" onclick="deleteUser()">Delete</button>
+			</div>
+            <b class="delete-user">DELETE USER</b>
+            <input type="text" class="group-child20" placeholder="User_ID">
+           
+            
+        </div>
+
+        <!-- TABLE SECTION -->
+        <div class="table-2">
+            <div class="table">
+                <div class="row">
+                    <div class="cell">
+                        <div class="content">
+                            <div class="text">User_ID</div>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="content">
+                            <div class="text">Name</div>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="content">
+                            <div class="text">User_Role_ID</div>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="content">
+                            <div class="text">Gender_ID</div>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="content">
+                            <div class="text">Contact</div>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="content">
+                            <div class="text">Username</div>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="content">
+                            <div class="text">Password</div>
+                        </div>
+                    </div>
+                </div>
+				<div class="row1">
+					<div class="cell7">
+						  <div class="content">
+								<div class="text7">
+								</div>
+						  </div>
+					</div>
+					<div class="cell7">
+						  <div class="content">
+								<div class="text7">
+								</div>
+						  </div>
+					</div>
+					<div class="cell7">
+						  <div class="content">
+								<div class="text7">
+								</div>
+						  </div>
+					</div>
+					<div class="cell7">
+						  <div class="content">
+								<div class="text7">
+								</div>
+						  </div>
+					</div>
+					<div class="cell7">
+						  <div class="content">
+								<div class="text7">
+								</div>
+						  </div>
+					</div>
+					<div class="cell7">
+						  <div class="content">
+								<div class="text7">
+								</div>
+						  </div>
+					</div>
+					<div class="cell7">
+						  <div class="content">
+								<div class="text7">
+								</div>
+						  </div>
+					</div>
+			  </div><div class="row1">
+				<div class="cell7">
+					  <div class="content">
+							<div class="text7">
+							</div>
+					  </div>
+				</div>
+				<div class="cell7">
+					  <div class="content">
+							<div class="text7">
+							</div>
+					  </div>
+				</div>
+				<div class="cell7">
+					  <div class="content">
+							<div class="text7">
+							</div>
+					  </div>
+				</div>
+				<div class="cell7">
+					  <div class="content">
+							<div class="text7">
+							</div>
+					  </div>
+				</div>
+				<div class="cell7">
+					  <div class="content">
+							<div class="text7">
+							</div>
+					  </div>
+				</div>
+				<div class="cell7">
+					  <div class="content">
+							<div class="text7">
+							</div>
+					  </div>
+				</div>
+				<div class="cell7">
+					  <div class="content">
+							<div class="text7">
+							</div>
+					  </div>
+				</div>
+		  </div><div class="row1">
+			<div class="cell7">
+				  <div class="content">
+						<div class="text7">
+						</div>
+				  </div>
+			</div>
+			<div class="cell7">
+				  <div class="content">
+						<div class="text7">
+						</div>
+				  </div>
+			</div>
+			<div class="cell7">
+				  <div class="content">
+						<div class="text7">
+						</div>
+				  </div>
+			</div>
+			<div class="cell7">
+				  <div class="content">
+						<div class="text7">
+						</div>
+				  </div>
+			</div>
+			<div class="cell7">
+				  <div class="content">
+						<div class="text7">
+						</div>
+				  </div>
+			</div>
+			<div class="cell7">
+				  <div class="content">
+						<div class="text7">
+						</div>
+				  </div>
+			</div>
+			<div class="cell7">
+				  <div class="content">
+						<div class="text7">
+						</div>
+				  </div>
+			</div>
+	  </div><div class="row1">
+		<div class="cell7">
+			  <div class="content">
+					<div class="text7">
+					</div>
+			  </div>
+		</div>
+		<div class="cell7">
+			  <div class="content">
+					<div class="text7">
+					</div>
+			  </div>
+		</div>
+		<div class="cell7">
+			  <div class="content">
+					<div class="text7">
+					</div>
+			  </div>
+		</div>
+		<div class="cell7">
+			  <div class="content">
+					<div class="text7">
+					</div>
+			  </div>
+		</div>
+		<div class="cell7">
+			  <div class="content">
+					<div class="text7">
+					</div>
+			  </div>
+		</div>
+		<div class="cell7">
+			  <div class="content">
+					<div class="text7">
+					</div>
+			  </div>
+		</div>
+		<div class="cell7">
+			  <div class="content">
+					<div class="text7">
+					</div>
+			  </div>
+		</div>
+  </div><div class="row1">
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+</div><div class="row1">
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+</div><div class="row1">
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+</div><div class="row1">
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+</div><div class="row1">
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+</div><div class="row1">
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+	<div class="cell7">
+		  <div class="content">
+				<div class="text7">
+				</div>
+		  </div>
+	</div>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+         function deleteUser() {
+            const userId = document.querySelector('.delete-user-input').value;
+            if (userId) {
+                const index = users.findIndex(user => user.User_ID === userId);
+                if (index !== -1) {
+                    users.splice(index, 1); // Remove the user from the array
+                    alert(`User with ID ${userId} has been deleted.`);
+                    // Optionally, update the table or UI here
+                } else {
+                    alert('User not found.');
+                }
+            } else {
+                alert('Please enter a User ID.');
+            }
+        }
+    </script>
+</body>
+</html>

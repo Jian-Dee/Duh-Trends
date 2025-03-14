@@ -1,0 +1,92 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet"  href="B1b_RenterDashboard.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap" />
+  	
+</head>
+<body>
+  	
+  	<div class="renter-dashboard">
+    		
+    		<div class="side-buttons">
+      			<div class="settings-button">
+					<a href="B5a_RenterSettings.html">
+        				<b class="settings">Settings</b></a>
+        				<img class="settings-icon" alt="" src="settings-icon.png">
+					
+      			</div>
+      			<div class="rent-payment-log-button">
+					<a href="B4a_RenterPaymentLog.html">
+        				<b class="rent-payment-log">Rent Payment Log</b></a>
+        				<img class="rent-payment-log-icon" alt="" src="payment-icon.png">
+					
+      			</div>
+      			<div class="manage-inventory-button">
+					<a href="B3a_RenterManageInventory.html">
+        				<b class="manage-inventory">Manage Inventory</b></a>
+        				<img class="manage-inventory-icon" alt="" src="inventory-icon.png">
+					
+      			</div>
+      			<div class="sales-data-button">
+					<a href="B2a_Renter-Sales.html">
+        				<b class="sales-data">Sales Data</b></a>
+        				<img class="sales-icon" alt="" src="sales-icon.png">
+					
+      			</div>
+      			<div class="home-button">
+        				<div class="home-container">
+        				</div>
+        				<b class="home">Home</b>
+        				<img class="home-icon" alt="" src="home-icon.png">
+        				
+      			</div>
+    		</div>
+    		
+    		<div class="dashboard-group">
+      			<div class="dashboard-container">
+      			</div>
+      			<div class="stock-display">
+        				<div class="total-stck-container">
+        				</div>
+        				<div class="item-text-display" id="totalItems">	Loading...</div>
+        				<div class="total-no-of">Total no. of Stock</div>
+      			</div>
+      			<div class="total-sales">
+        				<div class="total-sales-container">
+        				</div>
+        				<div class="sales-text-display" id="totalSales">Loading..</div>
+        				<div class="total-sales1">Total Sales</div>
+      			</div>
+      			<div class="main-display-group">
+        				<div class="main-display-container">
+        				</div>
+        				<div class="chart-display">
+							<table id="itemStockTable" border="1">
+								<thead>
+									<tr>
+										<th>Item ID</th>
+										<th>Description</th>
+										<th>Price</th>
+										<th>Quantity</th>
+									</tr>
+								</thead>
+								<tbody>
+									<!-- Rows will be added dynamically -->
+								</tbody>
+							</table>
+						</div>
+      			</div>
+      			<div class="dashboard-title">Dashboard</div>
+      			<img class="profile-pic-icon" alt="" src="renter-profile.png">
+      			
+    		</div>
+    		<b class="duh-trends-palas">DUH TRENDS PALAS</b>
+  	</div>
+
+	  <script src="B1c_RenterDashboard.js"></script>
+</body>
+</html>

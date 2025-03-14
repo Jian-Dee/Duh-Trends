@@ -1,0 +1,408 @@
+body {
+    background-image: url('rd.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Poppins;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover, a:visited, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.settings {
+    position: absolute;
+    top: 0px;
+    left: 47px;
+    display: inline-block;
+    width: 189px;
+    height: 25px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.settings-icon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}
+.settings-button {
+    position: absolute;
+    top: 359px;
+    left: 18px;
+    width: 236px;
+    height: 25px;
+}
+.rent-payment-log {
+    position: absolute;
+    top: 3px;
+    left: 44px;
+    display: inline-block;
+    width: 189px;
+    height: 25px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.rent-payment-log-icon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 31px;
+    height: 31px;
+    object-fit: cover;
+}
+.rent-payment-log-button {
+    position: absolute;
+    top: 278px;
+    left: 15px;
+    width: 233px;
+    height: 31px;
+}
+.manage-inventory {
+    position: absolute;
+    top: 0px;
+    left: 44px;
+    display: inline-block;
+    width: 140px;
+    height: 50px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.manage-inventory-icon {
+    position: absolute;
+    top: 11px;
+    left: 0px;
+    width: 31px;
+    height: 31px;
+    object-fit: cover;
+}
+.manage-inventory-button {
+    position: absolute;
+    top: 180px;
+    left: 18px;
+    width: 184px;
+    height: 50px;
+}
+.sales-data {
+    position: absolute;
+    top: 3px;
+    left: 43px;
+    display: inline-block;
+    width: 100px;
+    height: 25px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.sales-icon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 28px;
+    height: 28px;
+    object-fit: cover;
+    
+}
+.sales-data-button {
+    position: absolute;
+    top: 103px;
+    left: 16px;
+    width: 143px;
+    height: 28px;
+}
+.home-container {
+    position: absolute;
+    top: 0px;
+    left: 0px; 
+    border-radius: 26px;
+    background-color: #f6f6f6;
+    width: 294px;
+    height: 52px;
+}
+.home {
+    position: absolute;
+    top: 12px;
+    left: 60px;
+    display: inline-block;
+    width: 74px;
+    height: 27px;
+    font-family: Poppins;
+    text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+}
+.home-icon {
+    position: absolute;
+    top: 11px;
+    left: 16px;
+    width: 29px;
+    height: 29px;
+    object-fit: cover;
+}
+.home-button {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 294px;
+    height: 52px;
+}
+.side-buttons {
+    position: absolute;
+    top: 178px;
+    left: 23px;
+    width: 294px;
+    height: 384px;
+}
+.dashboard-container {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    border-radius: 45px;
+    background-color: #f6f6f6;
+    width: 100%;
+    height: 100%;
+    
+}
+.total-stck-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 22px;
+    background-color: #303030;
+    width: 398px;
+    height: 131.3px;
+}
+.item-text-display {
+    position: absolute;
+    top: 40px;
+    left: 39px;
+    font-weight: 800;
+    display: inline-block;
+    width: 343px;
+    height: 70px;
+}
+.total-no-of {
+    position: absolute;
+    top: 11px;
+    left: 39px;
+    font-size: 36px;
+    font-weight: 600;
+    color: #ffcb74;
+    display: inline-block;
+    width: 328px;
+    height: 41px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.stock-display {
+    position: absolute;
+    top: 572px;
+    left: 502px;
+    width: 398px;
+    height: 131.3px;
+}
+.total-sales-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 22px;
+    background-color: #303030;
+    width: 398px;
+    height: 131.3px;
+}
+.sales-text-display {
+    position: absolute;
+    top: 39.28px;
+    left: 35px;
+    font-weight: 800;
+    display: inline-block;
+    width: 343px;
+    height: 70px;
+}
+.total-sales1 {
+    position: absolute;
+    top: 10.28px;
+    left: 35px;
+    font-size: 36px;
+    font-weight: 600;
+    color: #ffcb74;
+    display: inline-block;
+    width: 208px;
+    height: 41px;
+    font-family: Poppins;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.total-sales {
+    position: absolute;
+    top: 572.72px;
+    left: 95px;
+    box-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+    width: 398px;
+    height: 131.3px;
+}
+.main-display-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 22px;
+    background-color: #303030;
+    width: 917px;
+    height: 446px;
+}
+.chart-display {
+    position: absolute;
+    top: 32px;
+    left: 28px;
+    border-radius: 22px;
+    background-color: #f5f5f5;
+    width: 850px;
+    height: 381px;
+}
+.out-of-stock-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 22px;
+    background-color: #f5f5f5;
+    width: 432px;
+    height: 178px;
+}
+.out-of-stock {
+    position: absolute;
+    top: 8.28px;
+    left: 27px;
+    display: inline-block;
+    width: 376px;
+    height: 29px;
+}
+.out-of-stock-display {
+    position: absolute;
+    top: 32px;
+    left: 455px;
+    width: 432px;
+    height: 178px;
+}
+.out-of-stock-container1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 22px;
+    background-color: #f5f5f5;
+    width: 432px;
+    height: 179px;
+}
+.out-of-stock1 {
+    position: absolute;
+    top: 8.33px;
+    left: 27px;
+    display: inline-block;
+    width: 376px;
+    height: 29.1px;
+}
+.out-of-stock-display1 {
+    position: absolute;
+    top: 32px;
+    left: 455px;
+    width: 432px;
+    height: 179px;
+}
+.out-of-stock-display2 {
+    position: absolute;
+    top: 234px;
+    left: 455px;
+    width: 432px;
+    height: 179px;
+}
+.main-display-group {
+    position: absolute;
+    top: 112px;
+    left: 39px;
+    width: 917px;
+    height: 446px;
+    text-align: center;
+    font-size: 20px;
+    color: #303030;
+    
+}
+.dashboard-title {
+    position: absolute;
+    top: 39px;
+    left: 24px;
+    font-size: 40px;
+    font-weight: 500;
+    color: #303030;
+    text-align: center;
+    display: inline-block;
+    width: 940px;
+    height: 49px;
+    text-shadow: 1px 0 0 #303030, 0 1px 0 #303030, -1px 0 0 #303030, 0 -1px 0 #303030;
+    font-family: Poppins;
+}
+.profile-pic-icon {
+    position: absolute;
+    top: 23px;
+    left: 898px;
+    width: 62px;
+    height: 62px;
+    object-fit: cover;
+}
+.dashboard-group {
+    position: absolute;
+    top: 24px;
+    left: 266px;
+    width: 54%;
+    height: 93%;
+    font-size: 58px;
+}
+.duh-trends-palas {
+    position: absolute;
+    top: 70px;
+    left: 51px;
+    font-size: 24px;
+    display: inline-block;
+    text-align: center;
+    width: 160px;
+    height: 66px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.renter-dashboard {
+    width: 100%;
+    position: relative;
+    height: 800px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 18px;
+    color: #fff;
+    font-family: Poppins;
+}
+
+
+
+#itemStockTable {
+    width: 700px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    display: inline-block;
+    overflow-y: auto;
+    height: 350px;
+}
+
+#itemStockTable thead {
+    background-color: #f1f1f1; /* Optional: to style the header */
+}
+
+#itemStockTable tbody {
+
+}
+
+#itemStockTable th, #itemStockTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#itemStockTable th {
+    position: sticky;
+    top: 0;
+    background-color: #f1f1f1; /* Optional: to ensure header stays visible while scrolling */
+}

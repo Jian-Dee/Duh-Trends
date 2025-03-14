@@ -10,7 +10,8 @@ const {
     returnRenterStock,
     getTotalItemsInStockByRenter,
     getTotalLowStockByRenter,
-    getTotalOutOfStockItems  
+    getTotalOutOfStockItems,
+    getAllItems  
 } = require('../controllers/itemController');
 
 router.post('/add', addItem); //works
@@ -23,5 +24,8 @@ router.get('/return-stock/:renterId', returnRenterStock); //works
 router.get('/total-stock/:renterId', getTotalItemsInStockByRenter); //works
 router.get('/low-stock/:renterId', getTotalLowStockByRenter); //works
 router.get('/out-of-stock/:renterId', getTotalOutOfStockItems); //works
+router.get('/all-items/:renterId', getAllItems);
+
+
 
 module.exports = router;

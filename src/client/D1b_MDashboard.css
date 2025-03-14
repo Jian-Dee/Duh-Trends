@@ -1,0 +1,459 @@
+body {
+    background-image: url('rd.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Poppins;
+    }
+    a {
+    text-decoration: none;
+    color: inherit;
+    }
+    
+    a:hover, a:visited, a:active {
+    text-decoration: none;
+    color: inherit;
+    }
+    .search-bar {
+    z-index: 4;
+    width: 250px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #333;
+    color: white;
+    outline: none;
+    font-size: 14px;
+    padding-left: 40px;
+    position: relative;
+    font-family: Poppins;
+    }
+    .search-text-field {
+    z-index: 4;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 22px;
+    background-color: #303030;
+    width: 437px;
+    height: 41px;
+    }
+    .search-icon {
+    z-index: 4;
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    width: 28px;
+    height: 28px;
+    object-fit: cover;
+    }
+    .search-group {
+    z-index: 4;
+    position: fixed;
+    top: 138px;
+    left: 620px;
+    width: 550px;
+    height: 41px;
+    }
+    .management-dashboard-general-child {
+    position: absolute;
+    top: 178px;
+    left: 23px;
+    border-radius: 26px;
+    background-color: #f6f6f6;
+    width: 294px;
+    height: 52px;
+    }
+    .management-dashboard-general-item {
+    position: absolute;
+    top: 24px;
+    left: 261px;
+    border-radius: 45px;
+    background-color: #f6f6f6;
+    width: 995px;
+    height: 752px;
+    }
+    .general-reports {
+    position: absolute;
+    top: 62px;
+    left: 289px;
+    font-size: 40px;
+    font-weight: 500;
+    color: #303030;
+    text-align: center;
+    display: inline-block;
+    width: 940px;
+    height: 49px;
+    text-shadow: 1px 0 0 #303030, 0 1px 0 #303030, -1px 0 0 #303030, 0 -1px 0 #303030;
+    }
+    .rectangle-div {
+    position: absolute;
+    top: 198px;
+    left: 289px;
+    border-radius: 22px;
+    background-color: #303030;
+    width: 575px;
+    height: 546px;
+    }
+    .management-dashboard-general-child1 {
+    position: absolute;
+    top: 198px;
+    left: 882px;
+    border-radius: 22px;
+    background-color: #303030;
+    width: 347px;
+    height: 169px;
+    }
+    .management-dashboard-general-child2 {
+    position: absolute;
+    top: 381px;
+    left: 879px;
+    border-radius: 22px;
+    background-color: #303030;
+    width: 347px;
+    height: 363px;
+    }
+    .renters {
+    position: absolute;
+    top: 210px;
+    left: 317px;
+    font-size: 38px;
+    display: inline-block;
+    width: 174px;
+    height: 39px;
+    }
+    .invertory {
+    position: absolute;
+    top: 400px;
+    left: 905px;
+    font-size: 30px;
+    display: inline-block;
+    width: 174px;
+    height: 39px;
+    }
+    .total-sales {
+    position: absolute;
+    top: 221px;
+    left: 933px;
+    font-size: 40px;
+    display: inline-block;
+    color: #ffcb74;
+    text-align: center;
+    width: 240px;
+    height: 50px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+    }
+    .rent-payment {
+    margin: 0;
+    }
+    .rent-payment-tracking-container {
+    position: absolute;
+    top: 373px;
+    left: 83px;
+    display: inline-block;
+    width: 189px;
+    height: 25px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+    }
+    .settings {
+    position: absolute;
+    top: 537px;
+    left: 88px;
+    display: inline-block;
+    width: 189px;
+    height: 25px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+    }
+    .manage-user {
+    position: absolute;
+    top: 466px;
+    left: 84px;
+    display: inline-block;
+    width: 189px;
+    height: 25px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+    }
+    .home {
+    position: absolute;
+    top: 190px;
+    left: 83px;
+    display: inline-block;
+    width: 74px;
+    height: 27px;
+    text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+    }
+    .icon {
+    position: absolute;
+    top: 189px;
+    left: 39px;
+    width: 29px;
+    height: 29px;
+    object-fit: cover;
+    }
+    .icon1 {
+    position: absolute;
+    top: 384px;
+    left: 39px;
+    width: 31px;
+    height: 31px;
+    object-fit: cover;
+    }
+    .icon2 {
+    position: absolute;
+    top: 537px;
+    left: 41px;
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    }
+    .inventory-overview {
+    position: absolute;
+    top: 275px;
+    left: 83px;
+    display: inline-block;
+    width: 140px;
+    height: 50px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+    }
+    .icon3 {
+    position: absolute;
+    top: 286px;
+    left: 39px;
+    width: 31px;
+    height: 31px;
+    object-fit: cover;
+    }
+    .icon4 {
+    position: absolute;
+    top: 466px;
+    left: 40px;
+    width: 29px;
+    height: 29px;
+    object-fit: cover;
+    }
+    .div {
+    position: absolute;
+    top: 271px;
+    left: 909px;
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    display: inline-block;
+    width: 293px;
+    height: 70px;
+    }
+    
+    .text {
+    flex: 1;
+    position: relative;
+    line-height: 130%;
+    font-weight: 600;
+    }
+    .content {
+    align-self: stretch;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px 12px;
+    }
+    .cell {
+    align-self: stretch;
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.06);
+    border-top: 1px solid #b9b9b9;
+    border-left: 1px solid #b9b9b9;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    }
+    .row {
+    align-self: stretch;
+    background-color: rgba(255, 255, 255, 0);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-family: Poppins;
+    }
+    .text3 {
+    flex: 1;
+    position: relative;
+    line-height: 130%;
+    }
+    .cell3 {
+    align-self: stretch;
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0);
+    border-top: 1px solid #b9b9b9;
+    border-left: 1px solid #b9b9b9;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    }
+    .row1 {
+    align-self: stretch;
+    background-color: rgba(255, 255, 255, 0);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    }
+    .inv {
+    align-self: stretch;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #b9b9b9;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    }
+    .inventory {
+    width: 100%;
+    position: relative;
+    box-shadow: -4px 4px 0px rgba(0, 0, 0, 0.25);
+    height: 247px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    font-size: 12px;
+    color: #000;
+    font-family: Inter;
+    }
+    
+    
+    
+    
+    
+    
+    .text {
+    flex: 1;
+    position: relative;
+    line-height: 130%;
+    font-weight: 600;
+    }
+    .content {
+    align-self: stretch;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px 12px;
+    }
+    .cell {
+    align-self: stretch;
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.06);
+    border-top: 1px solid #b9b9b9;
+    border-left: 1px solid #b9b9b9;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    }
+    .row {
+    align-self: stretch;
+    background-color: rgba(255, 255, 255, 0);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    }
+    .text5 {
+    flex: 1;
+    position: relative;
+    line-height: 130%;
+    }
+    .cell5 {
+    align-self: stretch;
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0);
+    border-top: 1px solid #b9b9b9;
+    border-left: 1px solid #b9b9b9;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    }
+    .table {
+    align-self: stretch;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #b9b9b9;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    }
+    .management-general-reports {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 520px;
+    height: 442px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    }
+    .management-general-reports-wrapper {
+    position: absolute;
+    top: 274px;
+    left: 317px;
+    filter: drop-shadow(-4px 4px 0px rgba(0, 0, 0, 0.25));
+    width: 520px;
+    height: 442px;
+    font-size: 12px;
+    color: #000;
+    font-family: Inter;
+    }
+    .icon5 {
+    position: absolute;
+    top: 47px;
+    left: 1164px;
+    width: 62px;
+    height: 62px;
+    object-fit: cover;
+    }
+    .duh-trends-palas {
+    position: absolute;
+    top: 70px;
+    left: 51px;
+    font-size: 24px;
+    display: inline-block;
+    text-align: center;
+    width: 160px;
+    height: 66px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+    }
+    .icon6 {
+    position: absolute;
+    top: 137px;
+    left: 553px;
+    width: 28px;
+    height: 28px;
+    object-fit: cover;
+    }
+    .management-dashboard-general {
+    width: 100%;
+    position: relative;
+    height: 800px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 18px;
+    color: #fff;
+    font-family: Poppins;
+    }
+    

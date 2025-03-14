@@ -1,0 +1,419 @@
+body {
+    background-image: url('rd.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Poppins;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover, a:visited, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+/* Dropdown container */
+.dropdown {
+    display: inline-block;
+}
+
+/* Dropdown button */
+.dropdown-btn {
+    position: fixed;
+    background: #303030;
+    text-align: left;
+    color: #f3f3f3;
+    border: none;
+    padding: 5px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: Poppins;
+    top: 172px;
+    width: 500px;
+    left: 310px;
+
+}
+
+/* Dropdown menu (hidden by default) */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 60%;
+    background: #303030;
+    list-style: none;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    margin: 0;
+    width: 250px;
+    height: 100px;
+    font-family: Poppins;
+}
+.down-icon {
+    position: absolute;
+    z-index: 1;
+    top: 172px;
+    left: 770px;
+    width: 20px;
+    height: 20px;
+    overflow: auto;
+}
+
+/* Dropdown items */
+.dropdown-menu li {
+    padding: 10px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #f6f6f6;
+    display: block;
+}
+
+/* Show dropdown when active */
+.dropdown-menu.show {
+    display: block;
+}
+.staff-inventory-overview-child {
+    position: absolute;
+    top: 24px;
+    left: 261px;
+    border-radius: 45px;
+    background-color: #f6f6f6;
+    width: 995px;
+    height: 752px;
+}
+.inventory-overview {
+    position: absolute;
+    top: 63px;
+    left: 290px;
+    font-size: 40px;
+    font-weight: 500;
+    color: #303030;
+    text-align: center;
+    display: inline-block;
+    width: 940px;
+    height: 49px;
+    text-shadow: 1px 0 0 #303030, 0 1px 0 #303030, -1px 0 0 #303030, 0 -1px 0 #303030;
+}
+.group-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 12px;
+    background-color: #303030;
+    width: 199px;
+    height: 73px;
+}
+.total-no-of {
+    position: absolute;
+    top: 10px;
+    left: 21px;
+    font-weight: 800;
+    display: inline-block;
+    width: 165px;
+    height: 27px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.items {
+    position: absolute;
+    top: 33px;
+    left: 20.95px;
+    font-size: 20px;
+    display: inline-block;
+    color: #f6f6f6;
+    width: 147.7px;
+    height: 26px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.rectangle-parent {
+    position: absolute;
+    top: 656px;
+    left: 304px;
+    box-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+    width: 199px;
+    height: 73px;
+    color: #ffcb74;
+}
+.icon {
+    position: absolute;
+    top: 47px;
+    left: 1164px;
+    width: 62px;
+    height: 62px;
+    object-fit: cover;
+}
+.staff-inventory-overview-item {
+    position: absolute;
+    top: 351px;
+    left: 22px;
+    border-radius: 26px;
+    background-color: #f6f6f6;
+    width: 286px;
+    height: 68px;
+}
+.monitor-sales {
+    position: absolute;
+    top: 284px;
+    left: 82px;
+    display: inline-block;
+    width: 143px;
+    height: 25px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.rent-payment-log {
+    position: absolute;
+    top: 459px;
+    left: 82px;
+    display: inline-block;
+    width: 189px;
+    height: 25px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.settings {
+    position: absolute;
+    top: 537px;
+    left: 88px;
+    display: inline-block;
+    width: 189px;
+    height: 25px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.home {
+    position: absolute;
+    top: 190px;
+    left: 83px;
+    display: inline-block;
+    width: 74px;
+    height: 27px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.icon1 {
+    position: absolute;
+    top: 189px;
+    left: 39px;
+    width: 29px;
+    height: 29px;
+    object-fit: cover;
+}
+.icon2 {
+    position: absolute;
+    top: 281px;
+    left: 39px;
+    width: 28px;
+    height: 28px;
+    object-fit: cover;
+}
+.icon3 {
+    position: absolute;
+    top: 456px;
+    left: 38px;
+    width: 31px;
+    height: 31px;
+    object-fit: cover;
+}
+.icon4 {
+    position: absolute;
+    top: 537px;
+    left: 41px;
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}
+.manage-inventory {
+    position: absolute;
+    top: 358px;
+    left: 85px;
+    display: inline-block;
+    width: 140px;
+    height: 50px;
+    text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+}
+.icon5 {
+    position: absolute;
+    top: 369px;
+    left: 41px;
+    width: 31px;
+    height: 31px;
+    object-fit: cover;
+}
+.text {
+    flex: 1;
+    position: relative;
+    line-height: 130%;
+    font-weight: 600;
+}
+.content {
+    align-self: stretch;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px 12px;
+}
+.cell {
+    align-self: stretch;
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.06);
+    border-top: 1px solid #b9b9b9;
+    border-left: 1px solid #b9b9b9;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.row {
+    align-self: stretch;
+    background-color: rgba(255, 255, 255, 0);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 14px;
+    font-family: Poppins;
+}
+.text6 {
+    flex: 1;
+    position: relative;
+    line-height: 130%;
+}
+.cell6 {
+    align-self: stretch;
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0);
+    border-top: 1px solid #b9b9b9;
+    border-left: 1px solid #b9b9b9;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.row1 {
+    align-self: stretch;
+    background-color: rgba(255, 255, 255, 0);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.table {
+    align-self: stretch;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #b9b9b9;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.staff-inventory-overview1 {
+    position: absolute;
+    top: 210px;
+    left: 306px;
+    width: 908px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 12px;
+    color: #000;
+    font-family: Inter;
+}
+.group-item {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #303030;
+    width: 484px;
+    height: 30px;
+}
+
+.renter-1 {
+    position: absolute;
+    top: 3px;
+    left: 11px;
+    line-height: 130%;
+    display: inline-block;
+    width: 248px;
+    height: 24px;
+}
+.rectangle-group {
+    position: absolute;
+    top: 168px;
+    left: 304px;
+    width: 484px;
+    height: 30px;
+}
+.group-inner {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 12px;
+    background-color: #303030;
+    width: 184px;
+    height: 46px;
+}
+.stockout-item {
+    position: absolute;
+    top: 14px;
+    left: 47px;
+    line-height: 20px;
+    display: inline-block;
+    width: 127px;
+    height: 18px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.icon6 {
+    position: absolute;
+    top: 9px;
+    left: 13px;
+    width: 27px;
+    height: 27px;
+    object-fit: cover;
+}
+.rectangle-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 184px;
+    height: 46px;
+}
+.staff-inventory-overview-inner {
+    position: absolute;
+    top: 154px;
+    left: 1029px;
+    width: 184px;
+    height: 46px;
+    font-size: 17px;
+    color: #ffcb74;
+}
+.duh-trends-palas {
+    position: absolute;
+    top: 70px;
+    left: 51px;
+    font-size: 24px;
+    display: inline-block;
+    text-align: center;
+    width: 160px;
+    height: 66px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.staff-inventory-overview {
+    width: 100%;
+    position: relative;
+    height: 800px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 18px;
+    color: #fff;
+    font-family: Poppins;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="A1b_Landingpage.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@700;900&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" />
+  <title>LandingPage</title>
+</head>
+<body>
+  <div class="container">
+  <div class="duh-trends-palas">DUH TRENDS PALAS</div>
+  <div class="home-for-a">Home for a stylish you</div>
+  <div class="get-started-button" id="getStartedButton">
+    <img class="sign-in-container-icon" alt="" src="gsb.svg">
+  </div>
+  </div>
+    <script>
+    var getStartedButton = document.getElementById("getStartedButton");
+    if(getStartedButton) {
+    getStartedButton.addEventListener("click", function (e) {
+      window.location.href = 'A2a_Sign-in_page.html';
+    });
+    }</script>
+  </body>
+</html>

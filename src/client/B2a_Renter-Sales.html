@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet"  href="B2b_Renter-Sales.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+  	
+  	
+  	
+</head>
+<body>
+  	
+  	<div class="renter-sales-data">
+    		
+    		<div class="renter-sales-data-child">
+    		</div>
+    		<div class="renter-sales-data-item">
+    		</div>
+    		<a href="B1a_RenterDashboard.html">
+				<b class="home">Home</b>
+				<img class="icon" alt="" src="home1-icon.png">
+			</a>
+			
+				<b class="sales-data1">Sales Data</b>
+				<img class="icon1" alt="" src="sales1-icon.png">
+	
+			<a href="B4a_RenterPaymentLog.html">
+				<b class="rent-payment-log">Rent Payment Log</b>
+				<img class="icon2" alt="" src="payment-icon.png">
+			</a>
+			
+			<a href="B5a_RenterSettings.html">
+				<b class="settings">Settings</b>
+				<img class="icon3" alt="" src="settings-icon.png">
+			</a>
+			
+			<a href="B3a_RenterManageInventory.html">
+				<b class="manage-inventory">Manage Inventory</b>
+				<img class="icon4" alt="" src="inventory-icon.png">
+			</a>
+    		
+    		<div class="rectangle-parent">
+      			<div class="group-child">
+      			</div>
+				  <div class="balance">Total Sales</div> <!-- Renamed to Total Sales -->
+				  <div class="total-sales">Loading...</div>
+    		</div>
+    		<div class="rectangle-group">
+      	
+				<input type="text" placeholder="Search (Item Name or Sales ID)" class="search-bar">
+				<img class="icon5" alt="" src="search-icon.png">
+      			
+    		</div>
+    		<img class="icon6" alt="" src="renter-profile.png">
+    		
+
+    		<div class="table-container">
+				<table class="table">
+					<thead>
+						<tr>
+							<th class="sortable" data-column="date">Date</th>
+           					<th class="sortable" data-column="sales_id">Sales ID</th>
+							<th>Item Name</th>
+							<th>Item Price</th>
+							<th>Quantity</th>
+                            <th>SubTotal</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- Data rows will be inserted here -->
+					</tbody>
+				</table>
+			</div>
+    		<b class="duh-trends-palas">DUH TRENDS PALAS</b>
+  	</div>
+  	
+  	<script src="B2c_Renter-Sales.js"></script>
+  	
+  	
+</body>
+</html>

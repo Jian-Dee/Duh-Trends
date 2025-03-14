@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    background-color: #303030;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover, a:visited, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+.dropdown-container {
+    position: relative;
+    display:inline-block;
+    top: 130px;
+    left: 76px;
+}
+
+
+.dropdown-btn {
+    position: relative;
+    background: #303030;
+    text-align: left;
+    color: #f3f3f3;
+    border: none;
+    padding: 5px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: Poppins;
+    top: 120px;
+    width: 500px;
+    left: 76px;
+
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute; 
+    top: 160px; 
+    left: 400px;
+    background: #303030;
+    list-style: none;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    margin: 0;
+    width: 250px;
+    height: 100px;
+    overflow: visible;
+    font-family: Poppins;
+}
+.down-icon {
+    position: absolute;
+    z-index: 1;
+    top: 138px;
+    left: 545px;
+    width: 20px;
+    height: 20px;
+    overflow: auto;
+}
+
+
+.dropdown-menu li {
+    padding: 10px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #f6f6f6;
+
+}
+
+
+.dropdown-menu.show {
+    z-index: 1;
+    display: block;
+}
+.group-item {
+    position: absolute;
+    top: 85px;
+    left: 0px;
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    background-color: #f6f6f6;
+    width: 100%;
+    height: 100vh;
+    overflow: visible;
+}
+
+.management-stockout-item-child {
+    position: absolute;
+    top: 22px;
+    left: 14px;
+    width: 39px;
+    height: 39px;
+    object-fit: cover;
+}
+.stockout-item {
+    position: absolute;
+    top: 22px;
+    left: 512px;
+    display: inline-block;
+    color: #f6f6f6;
+    text-align: center;
+    width: 254px;
+    height: 33px;
+}
+.back-to-inventory {
+    position: absolute;
+    top: 33px;
+    left: 67px;
+    font-size: 14px;
+    display: inline-block;
+    width: 210.3px;
+    height: 17.8px;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+.text {
+    flex: 1;
+    position: relative;
+    line-height: 130%;
+    font-weight: 600;
+}
+.content {
+    align-self: stretch;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px 12px;
+}
+.cell {
+    align-self: stretch;
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.06);
+    border-top: 1px solid #b9b9b9;
+    border-left: 1px solid #b9b9b9;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.row {
+    align-self: stretch;
+    background-color: rgba(255, 255, 255, 0);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 14px;
+    font-family: Poppins;
+}
+.text5 {
+    flex: 1;
+    position: relative;
+    line-height: 130%;
+}
+.cell5 {
+    align-self: stretch;
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0);
+    border-top: 1px solid #b9b9b9;
+    border-left: 1px solid #b9b9b9;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.row1 {
+    align-self: stretch;
+    background-color: rgba(255, 255, 255, 0);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.table {
+    align-self: stretch;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #b9b9b9;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.staff-inventory-overview {
+    position: absolute;
+    top: 173px;
+    left: 75px;
+    width: 1138px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 12px;
+    color: #000;
+    font-family: Inter;
+}
+.management-stockout-item {
+    width: 100%;
+    position: relative;
+    background-color: #303030;
+    min-height: 100vh;
+    overflow: hidden;
+    text-align: left;
+    font-size: 30px;
+    color: #f6f6f6;
+    font-family: Poppins;
+    overflow: visible;
+}
+

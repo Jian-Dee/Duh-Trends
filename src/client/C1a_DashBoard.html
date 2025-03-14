@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet"  href="C1b_Dashboard.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap" />
+  	
+  	
+  	
+</head>
+<body>
+  	
+  	<div class="store-staff-dashboard">
+    		
+    		<div class="store-staff-dashboard-child">
+    		</div>
+    		<div class="store-staff-dashboard-item"> 
+    		</div>
+    		
+				<b class="home">Home</b>
+				<img class="icon" alt="" src="home-icon.png">
+			
+			<a href="C2a_StoreStaffManageSales.html">
+				<b class="monitor-sales">Sales Data</b>
+				<img class="icon1" alt="" src="sales-icon.png"></a>
+	
+			<a href="C4a_RentPaymenntLog.html">
+				<b class="rent-payment-log">Rent Payment Log</b>
+				<img class="icon2" alt="" src="payment-icon.png">
+			</a>
+			
+			<a href="C5a_SettingPage.html">
+				<b class="settings">Settings</b>
+				<img class="icon3" alt="" src="settings-icon.png">
+			</a>
+			
+			<a href="C2a_StoreStaffManageSales.html">
+				<b class="manage-inventory">Inventory Overview</b>
+				<img class="icon4" alt="" src="inventory-icon.png">
+			</a>
+    		<div class="dashboard">Dashboard</div>
+    		<img class="icon5" alt="" src="staff-profile.png">
+    		
+    		<b class="duh-trends-palas">DUH TRENDS PALAS</b>
+    		<div class="store-staff-dashboard-inner">
+    		</div>
+    		<div class="out-of-stock-display">
+      			<div class="out-of-stock-container">
+      			</div>
+      			<b class="out-of-stock">Out of Stock</b>
+    		</div>
+    		<div class="out-of-stock-display1">
+      			<div class="out-of-stock-container">
+      			</div>
+      			<b class="out-of-stock">Low on Stock</b>
+    		</div>
+    		<div class="group-parent">
+		
+					
+					  <div class="group-item"></div>
+						<div class="dropdown">
+							<button class="dropdown-btn" onclick="toggleDropdown()">RENTER 1 ▼</button>
+							<ul class="dropdown-menu" id="dropdownMenu">
+								
+							</ul>
+						</div>
+						
+					
+      	
+      			
+    		</div>
+    		<div class="stock-display">
+      			<div class="total-stck-container">
+      			</div>
+      			<div class="item-text-display">270 Items</div>
+      			<div class="total-no-of">Total no. of Stock</div>
+    		</div>
+    		<div class="total-sales">
+      			<div class="total-stck-container">
+      			</div>
+      			<div class="sales-text-display">₱10,000.00</div>
+      			<div class="total-sales1">Total Sales</div>
+    		</div>
+  	</div>
+  	
+  	<script>
+		function toggleDropdown() {
+			document.getElementById("dropdownMenu").classList.toggle("show");
+		}
+		
+		// Close dropdown if clicked outside
+		document.addEventListener("click", function(event) {
+			var dropdown = document.querySelector(".dropdown");
+			if (!dropdown.contains(event.target)) {
+				document.getElementById("dropdownMenu").classList.remove("show");
+			}
+		});
+		</script>
+		
+  	
+  	
+</body>
+</html>

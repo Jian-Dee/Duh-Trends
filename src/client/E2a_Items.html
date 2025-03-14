@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet"  href="E2b_Items.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+</head>
+<body>
+
+  	<div class="renter-update-stock">
+    		<div class="update-stock-pop-up-wrapper">
+      			<div class="update-stock-pop-up-wrapper">
+        				<div class="update-stock-pop-up-wrapper">
+          					<div class="group-child"></div>
+          					<div class="group-item"></div>
+        				</div>
+        				<b class="items">Items</b>
+        				<div class="table-container">
+							<table class="table-1">
+							  <thead>
+								<tr>
+								  <th>Item_ID</th>
+								  <th>Item_Name</th>
+								  <th>Item_Type</th>
+								  <th>Actions</th>
+								</tr>
+							  </thead>
+							  <tbody id="itemsTableBody">
+								<!-- Table rows will be dynamically inserted here -->
+							  </tbody>
+							</table>
+						</div>
+						
+        				<div class="update-stock-pop-up-inner">
+          					<div class="rectangle-group">
+            						<div class="group-inner"></div>
+            						<b class="add-item">ADD ITEM</b>
+									<div class="rectangle-div">
+										<input type="text" id="itemId" class="input-field" placeholder="Enter Item ID" />
+									</div>
+									<div class="group-child1">
+										<input type="text" id="itemName" class="input-field" placeholder="Enter Item Name" />
+									</div>
+									<div class="group-child2">
+										<input type="text" id="itemType" class="input-field" placeholder="Enter Item Type" />
+									</div>
+            						<div class="item-id">Item_ID</div>
+            						<div class="item-name">Item_Name</div>
+            						<div class="item-type">Item_Type</div>
+            						<div class="rectangle-container" onclick="addItem()">
+										<div class="group-child3"></div>
+										<div class="save">Save</div>
+            						</div>
+          					</div>
+        				</div>
+
+        				<div class="update-stock-pop-up-child">
+          					<div class="rectangle-group">
+            						<div class="group-inner"></div>
+									<div class="group-child4">
+										<input type="text" id="newItemId" class="input-field" placeholder="Enter New Item ID" />
+									</div>
+            						<div class="group-child5">
+										<input type="text" id="editItemId" class="input-field" placeholder="Enter Item ID to Edit" />
+            						</div>
+            						<div class="group-child6">
+										<input type="text" id="newItemName" class="input-field" placeholder="Enter New Item Name" />
+            						</div>
+            						<b class="edit-item">EDIT ITEM</b>
+            						<div class="item-id1">Item_ID</div>
+            						<div class="item-name1">New Name</div>
+									<div class="new-item-id1">New Item_ID</div>
+            						<div class="rectangle-parent1" onclick="editItem()">
+              							<div class="group-child3"></div>
+              							<div class="save">Save</div>
+            						</div>
+          					</div>
+        				</div>
+
+        				<div class="rectangle-parent2">
+							<div class="group-child8"></div>
+							
+							<div class="group-child9">
+								<input type="text" id="deleteItemId" class="input-field" placeholder="Enter Item ID to Delete" />
+							</div>
+          					<div class="item-id2">Item_ID</div>
+          					<div class="delete-an-item">Delete an item by Item_ID.</div>
+          					<b class="delete">Delete</b>
+          					<b class="delete-item">DELETE ITEM</b>
+          					<div class="rectangle-parent3" onclick="deleteItem()">
+								<div class="group-child10"></div>
+								<div class="delete1">Delete</div>
+          					</div>
+        				</div>
+      			</div>
+    		</div>
+
+    		<div class="back-to-manage-inventory-parent">
+				<a href="B3a_RenterManageInventory.html">
+      			<b class="back-to-manage">Back to Manage Inventory</b>
+      			<img class="back-icon-1" alt="" src="back-icon.png"></a>
+    		</div>
+  	</div>
+  	
+  	<script src="E2c_Items.js"></script>
+</body>
+</html>
