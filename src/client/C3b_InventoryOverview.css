@@ -417,3 +417,42 @@ a:hover, a:visited, a:active {
     color: #fff;
     font-family: Poppins;
 }
+
+.table-container {
+    /* position: absolute;
+    top: 318px;
+    left: 316px; */
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #b9b9b9;
+    box-sizing: border-box;
+    width: 48%;
+    overflow: hidden;
+    font-size: 12px;
+    color: #000;
+    font-family: Inter;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    display: inline-block;
+    overflow-y: auto;
+    height: 350px;
+}   
+
+.table th, .table td {
+    border: 1px solid #b9b9b9;
+    padding: 8px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.table th {
+    background-color: rgba(0, 0, 0, 0.06);
+    font-weight: bold;
+}
+
+.table tbody td {
+    background-color: rgba(255, 255, 255, 0);
+}

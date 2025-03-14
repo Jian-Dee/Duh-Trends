@@ -505,9 +505,32 @@ a:hover, a:visited, a:active {
     height: 800px;
     overflow: hidden;
     text-align: left;
-    font-size: 18px;
+    font-size: 12;
     color: #fff;
     font-family: Poppins;
 }
 
 
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    display: inline-block;
+    overflow-y: auto;
+    height: 350px;
+}   
+
+.table th, .table td {
+    border: 1px solid #b9b9b9;
+    padding: 8px;
+    text-align: left;
+    font-size: 24px;
+}
+
+.table th {
+    background-color: rgba(0, 0, 0, 0.06);
+    font-weight: bold;
+}
+
+.table tbody td {
+    background-color: rgba(255, 255, 255, 0);
+}
