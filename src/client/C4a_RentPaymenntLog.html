@@ -46,7 +46,7 @@
     		<div class="rectangle-parent">
 				<div class="group-child">
 				  <div class="dropdown">
-					  <button class="dropdown-btn" onclick="toggleDropdown()">RENTER 1</button>
+					  <button class="dropdown-btn" onclick="toggleDropdown()">SELECT RENTER</button>
 					  <ul class="dropdown-menu" id="dropdownMenu">
 						
 					  </ul>
@@ -99,19 +99,7 @@
   	</div>
   	
   	
-	  <script>
-		function toggleDropdown() {
-			document.getElementById("dropdownMenu").classList.toggle("show");
-		}
-		
-		// Close dropdown if clicked outside
-		document.addEventListener("click", function(event) {
-			var dropdown = document.querySelector(".dropdown");
-			if (!dropdown.contains(event.target)) {
-				document.getElementById("dropdownMenu").classList.remove("show");
-			}
-		});
-		</script>
+	  <script src="C4c_RentPaymenntLog.js"></script>
   	
 </body>
 </html>

@@ -42,7 +42,7 @@ a:hover, a:visited, a:active {
 .dropdown-menu {
     display: none;
     position: absolute;
-    left: 60%;
+    left: 0%;
     background: #303030;
     list-style: none;
     font-size: 16px;

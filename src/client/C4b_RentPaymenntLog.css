@@ -42,7 +42,7 @@ a:hover, a:visited, a:active {
 .dropdown-menu {
     display: none;
     position: absolute;
-    left: 60%;
+    left: 0%;
     background: #303030;
     list-style: none;
     font-size: 16px;
@@ -434,9 +434,9 @@ a:hover, a:visited, a:active {
     background-color: #fff;
     border: 1px solid #b9b9b9;
     box-sizing: border-box;
-    width: 47%;
+    width: 48%;
     overflow: hidden;
-    font-size: 10px;
+    font-size: 2px;
     color: #000;
     font-family: Inter;
 }
@@ -447,14 +447,14 @@ a:hover, a:visited, a:active {
     display: inline-block;
     overflow-y: auto;
     height: 350px;
-    
+    font-size: 2px;
 }   
 
 .table th, .table td {
     border: 1px solid #b9b9b9;
     padding: 8px;
     text-align: left;
-    font-size: 21px;
+    font-size: 13.5px;
 }
 
 .table th {

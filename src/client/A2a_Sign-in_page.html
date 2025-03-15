@@ -25,9 +25,20 @@
         <div class="home-for-a">Home for a stylish you</div>
     </div>
 
-    
-
     <script>
+        // Toggle Password Visibility
+        document.getElementById("togglePassword").addEventListener("click", function() {
+            const passwordField = document.getElementById("password");
+            const passwordType = passwordField.type;
+
+            // Toggle the input type between password and text
+            if (passwordType === "password") {
+                passwordField.type = "text";
+            } else {
+                passwordField.type = "password";
+            }
+        });
+
         document.getElementById("signInButton").addEventListener("click", async function() {
             const username = document.getElementById("username").value;
             const password = document.getElementById("password").value;
@@ -53,15 +64,15 @@
                 }
                 if (data.userId) {
                     sessionStorage.setItem("userId", data.userId);
+                    console.log("Stored User ID:", sessionStorage.getItem("userId"));
                 }
+
                 window.location.href = data.redirect;
             } else {
                 document.getElementById("errorMessage").innerText = data.error;
                 document.getElementById("errorMessage").style.display = "block";
             }
         });
-
-
     </script>
 </body>
 </html>

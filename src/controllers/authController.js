@@ -22,16 +22,16 @@ const loginUser = async (req, res) => {
 
     if (user.user_role_id === 1) {
       renterId = await AuthModel.getRenterIdByUsername(username);
+      console.log("Renter ID:", renterId);  // Debug log
       if (!renterId) return res.status(404).json({ error: 'Renter ID not found' });
       redirectPage = `B1a_RenterDashboard.html?renterId=${renterId}`;
-    } else if (user.user_role_id === 2) {
+    } else if (user.user_role_id === 2 || user.user_role_id === 3) {
       userId = await AuthModel.getUserIdByUsername(username);
+      console.log("User ID:", userId);  // Debug log
       if (!userId) return res.status(404).json({ error: 'User ID not found' });
-      redirectPage = `C1a_DashBoard.html?userId=${userId}`;
-    } else if (user.user_role_id === 3) {
-      userId = await AuthModel.getUserIdByUsername(username);
-      if (!userId) return res.status(404).json({ error: 'User ID not found' });
-      redirectPage = `D1a_MDashboard.html?userId=${userId}`;
+      redirectPage = user.user_role_id === 2 
+        ? `C1a_DashBoard.html?userId=${userId}` 
+        : `D1a_MDashboard.html?userId=${userId}`;
     } else {
       return res.status(403).json({ error: 'Unauthorized role' });
     }
@@ -43,5 +43,6 @@ const loginUser = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 };
+
 
 module.exports = { loginUser };

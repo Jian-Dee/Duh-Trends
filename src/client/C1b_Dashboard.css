@@ -32,7 +32,7 @@ a:hover, a:visited, a:active {
     font-family: Poppins;
 }
 
-/* Dropdown menu (hidden by default) */
+/* Dropdown menu (scrollable) */
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -44,13 +44,15 @@ a:hover, a:visited, a:active {
     padding: 0;
     margin: 0;
     width: 200px;
-    height: 100px;
+    max-height: 150px; /* Set max height */
+    overflow-y: auto; /* Enable vertical scrolling */
     font-family: Poppins;
 }
 
-/* Dropdown items */
+/* Ensure dropdown items are clickable */
 .dropdown-menu li {
     padding: 10px;
+    cursor: pointer;
 }
 
 .dropdown-menu li a {
@@ -260,7 +262,7 @@ a:hover, a:visited, a:active {
     top: 59.06px;
     left: 0px;
     border-radius: 22px;
-    background-color: #f5f5f5;
+    /* background-color: #f5f5f5; */
     width: 410px;
     height: 359.7px;
 }
@@ -373,7 +375,48 @@ a:hover, a:visited, a:active {
     overflow: hidden;
     text-align: left;
     font-size: 18px;
-    color: #fff;
+    color: #080808;
     font-family: Poppins;
 }
 
+.chart-display {
+    position: absolute;
+    top: 212px;
+    left: 325px;
+    border-radius: 22px;
+    background-color: #f5f5f5;
+    width: 850px;
+    height: 381px;
+}
+
+
+
+#itemStockTable {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    display: inline-block;
+    overflow-y: auto;
+    height: 100%;
+    font-size: 24px;
+}
+
+#itemStockTable thead {
+    background-color: #f1f1f1; /* Optional: to style the header */
+}
+
+#itemStockTable tbody {
+
+}
+
+#itemStockTable th, #itemStockTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#itemStockTable th {
+    position: sticky;
+    top: 0;
+    background-color: #f1f1f1; /* Optional: to ensure header stays visible while scrolling */
+}

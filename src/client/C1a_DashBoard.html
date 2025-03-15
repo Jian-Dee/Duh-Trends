@@ -46,58 +46,49 @@
     		<b class="duh-trends-palas">DUH TRENDS PALAS</b>
     		<div class="store-staff-dashboard-inner">
     		</div>
-    		<div class="out-of-stock-display">
-      			<div class="out-of-stock-container">
-      			</div>
-      			<b class="out-of-stock">Out of Stock</b>
-    		</div>
-    		<div class="out-of-stock-display1">
-      			<div class="out-of-stock-container">
-      			</div>
-      			<b class="out-of-stock">Low on Stock</b>
-    		</div>
+    		<div class="chart-display">
+				<table id="itemStockTable" border="1">
+					<thead>
+						<tr>
+							<th>Item ID</th>
+							<th>Description</th>
+							<th>Price</th>
+							<th>Quantity</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- Rows will be added dynamically -->
+					</tbody>
+				</table>
+			</div>
     		<div class="group-parent">
 		
 					
 					  <div class="group-item"></div>
-						<div class="dropdown">
-							<button class="dropdown-btn" onclick="toggleDropdown()">RENTER 1 ▼</button>
-							<ul class="dropdown-menu" id="dropdownMenu">
-								
-							</ul>
-						</div>
+					  <div class="dropdown">
+						<button class="dropdown-btn" onclick="toggleDropdown()">Select Renter ▼</button>
+						<ul class="dropdown-menu" id="dropdownMenu"></ul>
+					</div>
+					
 						
 					
       	
       			
     		</div>
     		<div class="stock-display">
-      			<div class="total-stck-container">
-      			</div>
-      			<div class="item-text-display">270 Items</div>
-      			<div class="total-no-of">Total no. of Stock</div>
-    		</div>
-    		<div class="total-sales">
-      			<div class="total-stck-container">
-      			</div>
-      			<div class="sales-text-display">₱10,000.00</div>
-      			<div class="total-sales1">Total Sales</div>
-    		</div>
+				<div class="total-stck-container"></div>
+				<div class="item-text-display" id="totalItems">0 Items</div>
+				<div class="total-no-of">Total no. of Stock</div>
+		  </div>
+
+		  <div class="total-sales">
+				<div class="total-stck-container"></div>
+				<div class="sales-text-display" id="totalSales">₱0.00</div>
+				<div class="total-sales1">Total Sales</div>
+		  </div>
   	</div>
   	
-  	<script>
-		function toggleDropdown() {
-			document.getElementById("dropdownMenu").classList.toggle("show");
-		}
-		
-		// Close dropdown if clicked outside
-		document.addEventListener("click", function(event) {
-			var dropdown = document.querySelector(".dropdown");
-			if (!dropdown.contains(event.target)) {
-				document.getElementById("dropdownMenu").classList.remove("show");
-			}
-		});
-		</script>
+  	<script src="C1c_DashBoard.js"></script>
 		
   	
   	

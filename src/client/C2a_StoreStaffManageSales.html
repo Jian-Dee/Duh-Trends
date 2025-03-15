@@ -56,7 +56,7 @@
     <div class="rectangle-parent">
       <div class="group-child"></div>
       <div class="dropdown">
-        <button class="dropdown-btn" onclick="toggleDropdown()">RENTER 1</button>
+        <button class="dropdown-btn" onclick="toggleDropdown()">SELECT RENTER</button>
         <ul class="dropdown-menu" id="dropdownMenu">
           <!-- Dropdown items here -->
         </ul>
@@ -136,18 +136,6 @@
     <b class="duh-trends-palas">DUH TRENDS PALAS</b>
   </div>
   
-  <script>
-    function toggleDropdown() {
-      document.getElementById("dropdownMenu").classList.toggle("show");
-    }
-    
-    // Close dropdown when clicked outside
-    document.addEventListener("click", function(event) {
-      var dropdown = document.querySelector(".dropdown");
-      if (!dropdown.contains(event.target)) {
-        document.getElementById("dropdownMenu").classList.remove("show");
-      }
-    });
-  </script>
+  <script src="C2c_StoreStaffManageSales.js"></script>
 </body>
 </html>	
