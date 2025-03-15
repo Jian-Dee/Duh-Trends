@@ -43,6 +43,10 @@ You can do this via the MySQL command line:
 
 CREATE DATABASE db_duh_trends_test;
 
+Then import the local database:
+
+mysql -u root -p db_duh_trends_test < db_duh_trends_test.sql
+
 4. Running the Project
 Start the server by running:
 
