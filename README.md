@@ -56,3 +56,4 @@ The server should now be running on http://localhost:3001. You should see a mess
 
 Server running on port 3001
 
+You finally run the webpage through src/client/A1a_Landingpage.htmls
